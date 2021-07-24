@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
+import profilePic from '../public/images/me.jpg'
 
 export default function Home() {
   return (
@@ -40,7 +41,43 @@ export default function Home() {
             <p>I am a <span className={styles.highlight}>Front-End Web Developer</span> who has a passion for graphic and interaction design and a background in visual effects and motion graphics</p>
             <button>Get In Touch</button>
           </div>
+        </section> 
+        
+        <section className={`${styles.copySection} ${styles.aboutMe} container`}>
+            <div className={styles.title}>
+              <h2>About Me</h2>
+            </div>
+            <div className={styles.copyGrid}>
+              <div className={styles.item}>
+                <p>Welcome to my portfolio! Like I mentioned above, my name is Robert, I tend to go by Robb. I started developing for the web when I was only 12 years old. As soon as I got my own computer (after much pestering!) I fell in love with creating and designing for the web.</p>
+                <p>I started developing for the web professionally in 2015 and have not stopped creating beautiful, useful and intuitive websites and interfaces since!</p>
+                <p>Here is a short list of technologies I currently use daily.</p>
+                <div className={styles.ulGrid}>
+                  <div>
+                    <ul>
+                      <li>JavaScript</li>
+                      <li>Next.js</li>
+                      <li>Vue.js</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul>
+                      <li>Docker</li>
+                      <li>React</li>
+                      <li>Netlify</li>
+                    </ul>
+                  </div>
+                </div>
+              
+              </div>
+              <div className={styles.item}>
+                <div className={styles.profilePicWrapper}>
+                  <Image src={profilePic} alt="Picture of me, Robert Kregloh" />
+                </div>
+              </div>
+            </div>
         </section>
+
       </main>
       
     </div>

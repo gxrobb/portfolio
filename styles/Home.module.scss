@@ -29,7 +29,7 @@
 
 .socialIcons{
     position:fixed;
-    left:50px;
+    left:20px;
     ul{
         margin:0;
         list-style:none;
@@ -49,12 +49,18 @@
     }
 }
 
+.main{
+    padding-left:1rem;
+    padding-right:1rem;
+}
 
 .heroWrapper{
     text-align: center;
     max-width:600px;
     margin:0 auto;
     margin-top:8rem;
+
+
     p{
         margin:0;
         line-height:1.5;
@@ -84,10 +90,60 @@
         margin-top:.5rem;
         cursor:pointer;
         &:hover{
-            background-color: lighten($primaryColor, 5%);
+            background-color: darken($primaryColor, 20%);
         }
     }
     .highlight{
         color:$primaryColor;
     }
 }
+
+.copySection{
+    margin-top:8rem;
+    h2{
+        color:$primaryColor;
+        text-transform: uppercase;
+    }
+}
+
+.aboutMe{
+    .copyGrid{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        p{
+            margin-top:0;
+        }
+        .profilePicWrapper{
+            img{
+                border-radius: 5px;
+            }
+            margin:0 auto;
+            max-width:400px;
+        }
+        .item{
+            ul{
+                list-style:none;
+                padding-left: 0em;
+                li{
+                    &:before {
+                        content: '';
+                        display: inline-block;
+                        height: 8px;
+                        width: 8px;
+                        background-image: url(/images/bulletPoint.svg);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        margin-right:0.5em;   
+                        position:relative;
+                        top:-2px;
+                      }
+                }
+            }
+            .ulGrid{
+                display: grid;
+                grid-template-columns: 2fr 6fr;
+            }
+        }
+    }
+}
+
