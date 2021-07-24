@@ -14,21 +14,33 @@ export default function Home() {
       <div className={styles.socialIcons}>
         <ul>
           <li><div className={styles.line}></div></li>
-          <li>Icon</li>
-          <li>icon</li>
+          <li><i className="fab fa-linkedin-in"></i></li>
+          <li><i className="fab fa-github"></i></li>
+          <li><i className="fas fa-envelope"></i></li>
         </ul>
       </div>
+      <nav className={styles.navigation}>
+        <ul>
+          <li>About Me</li>
+          <li>Experience</li>
+          <li>Portfolio</li>
+          <li>Resume</li>
+          <li>Contact</li>
+          <li><div className={styles.line}></div></li>
+        </ul>
+      </nav>
+ 
+
       <main className={styles.main}>
-        <div className={styles.navigation}>
-          <ul>
-            <li>About Me</li>
-            <li>Experience</li>
-            <li>Portfolio</li>
-            <li>Resume</li>
-            <li>Contact</li>
-            <li><div className={styles.line}></div></li>
-          </ul>
-        </div>  
+        <section className="container">
+          <div className={styles.heroWrapper}>
+            <p>Oh, Hello there! My name is</p>
+            <h1>ROBERT KREGLOH</h1>
+            <h3>And I like to build <span className={styles.highlight}>useful</span> things!</h3>
+            <p>I am a <span className={styles.highlight}>Front-End Web Developer</span> who has a passion for graphic and interaction design and a background in visual effects and motion graphics</p>
+            <button>Get In Touch</button>
+          </div>
+        </section>
       </main>
       
     </div>
