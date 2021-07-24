@@ -1,0 +1,46 @@
+@import './variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+.navigation{
+    color:$fontColor;
+    padding-top:1rem;
+    ul{
+        list-style:none;
+        padding:0;
+        text-align: right;
+
+        li{
+            display:inline;
+            margin-right:1rem;
+            &:last-child{
+                margin-right:0;
+            }
+            .line{
+                height:1px;
+                width:100px;
+                position: relative;
+                top: -5px;
+                background-color:$fontColor;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+.socialIcons{
+    position:fixed;
+    left:50px;
+    ul{
+        margin:0;
+        list-style:none;
+        padding:0;
+        li{
+            .line{
+                height:150px;
+                width:1px;
+                background-color:$fontColor;
+                margin:0 auto;
+            }
+        }
+    }
+}
