@@ -68,15 +68,10 @@ export default function Home() {
 
   const [activeEmployer, setActiveEmployer] = useState(jobList[0]);
 
-  function EmployerActivator(value){
-    setActiveEmployer(value);
-    console.log(value)
-  }
-
   function ListAllTitles(data){
       return (
         <>
-          {data.data.map((value) => {return <li onClick={ () => EmployerActivator(value) }  className={activeEmployer.id == value.id ? styles.active : null} key="id"> {value.label} </li>})}
+          {data.data.map((value) => {return <li onClick={ () => setActiveEmployer(value) }  className={activeEmployer.id == value.id ? styles.active : null} key="id"> {value.label} </li>})}
         </>
       )
     }

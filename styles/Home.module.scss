@@ -183,6 +183,7 @@
                 padding-left:0;
                 li{
                     color:rgba($fontColor, 1);
+                    cursor:unset;
                     &:before {
                         content: '';
                         display: inline-block;
