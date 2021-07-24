@@ -81,7 +81,7 @@ export default function Home() {
 
         <section className={`${styles.copySection} ${styles.experience} container`}>
           <div className={styles.title}>
-            <h2>Places I've Worked At</h2>
+            <h2>Places I&apos;ve Worked At</h2>
           </div>
           <div className={styles.experienceGrid}>
             <div className={styles.employer}>
