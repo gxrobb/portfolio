@@ -22,3 +22,18 @@ a {
   max-width:900px;
   margin:0 auto;
 }
+
+button{
+  margin:0;
+  background-color: $primaryColor;
+  color:$darkColor;
+  border:none;
+  border-radius: 5px;
+  padding:.5rem;
+  font-weight:300;
+  margin-top:.5rem;
+  cursor:pointer;
+  &:hover{
+      background-color: darken($primaryColor, 20%);
+  }
+}

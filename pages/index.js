@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
 import profilePic from '../public/images/me.jpg'
+import ProjectCard from '../components/ProjectCard.js'
 
 export default function Home() {
   return (
@@ -105,14 +106,31 @@ export default function Home() {
         </section>
 
 
-        <section className={`${styles.copySection} ${styles.experience} container`}>
+        <section className={`${styles.copySection} ${styles.projects} container`}>
           <div className={styles.title}>
             <h2>Some of my projects</h2>
           </div>
+          <div className={styles.projectsWrapper}>
+            <ProjectCard imgUrl={'/images/poolgarden.png'} stackList={'Next.js, SASS, Design'} logoCopy={'Pool.Garden'} projectLink={'https://www.pool.garden'} />
+            <ProjectCard imgUrl={'/images/firewalls.png'} stackList={'Wordpress, SASS, PHP, Design'} logoCopy={'Pool.Garden'} projectLink={'https://www.pool.garden'} />
+            <ProjectCard imgUrl={'/images/fwcblog.png'} stackList={'Magento 2, LESS, Docker, PHP, JS'} logoCopy={'Pool.Garden'} projectLink={'https://www.pool.garden'} />
+            <ProjectCard imgUrl={'/images/rpgipsum.png'} stackList={'Laravel, PHP, SASS, JavaScript'} logoCopy={'Pool.Garden'} projectLink={'https://www.pool.garden'} />
+          </div>
         </section>
 
+        <section className={`${styles.copySection} ${styles.contact} container`}>
+          <div className={styles.title}>
+            <h2>Contact</h2>
+          </div>
+          <div className={styles.contactWrapper}>
+              <p>If you have any questions, or just want to say hi, feel free to shoot me an email! Click the button below to launch your preferred email client!</p>
+              <button>Email Me</button>
+            </div>
+        </section>
       </main>
-      
+      <footer className={styles.footer}>
+        <p>Designed And Developed By Robert Kregloh | Deployed On Netlify!</p>
+      </footer>
     </div>
   )
 }
