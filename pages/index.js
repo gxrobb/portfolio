@@ -78,6 +78,39 @@ export default function Home() {
             </div>
         </section>
 
+        <section className={`${styles.copySection} ${styles.experience} container`}>
+          <div className={styles.title}>
+            <h2>Places I've Worked At</h2>
+          </div>
+          <div className={styles.experienceGrid}>
+            <div className={styles.employer}>
+              <ul>
+                <li className={styles.active}>Pool.Garden</li>
+                <li>Firewalls.com</li>
+                <li>BitLoft</li>
+                <li>4Media</li>
+                <li>JC Marketing</li>
+              </ul>
+            </div>
+            <div className={styles.employerDescription}>
+              <h3>Front-End Developer @ Pool.Garden</h3>
+              <h4>May 2021 - Present</h4>
+              <ul>
+                <li>I work with the Back-End developer to deliver a service for cryptocurrency miners to combine their efforts in a pool.</li>
+                <li>Responsibilities include maintaining the front end codebase, adding new features and designing any features or elements as they are needed.</li>
+                <li>Some of the skills I use in this position include NextJS, SASS, HTML.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+
+        <section className={`${styles.copySection} ${styles.experience} container`}>
+          <div className={styles.title}>
+            <h2>Some of my projects</h2>
+          </div>
+        </section>
+
       </main>
       
     </div>
