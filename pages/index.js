@@ -87,18 +87,18 @@ export default function Home() {
       <div className={styles.socialIcons}>
         <ul>
           <li><div className={styles.line}></div></li>
-          <li><i className="fab fa-linkedin-in"></i></li>
-          <li><i className="fab fa-github"></i></li>
-          <li><i className="fas fa-envelope"></i></li>
+          <li><a href="https://www.linkedin.com/in/rkregloh/" target="_blank" rel="noreferrer"><i className="fab fa-linkedin-in"></i></a></li>
+          <li><a href="https://github.com/gxrobb" target="_blank" rel="noreferrer"><i className="fab fa-github"></i></a></li>
+          <li><a href="mailto:gxrobb@gmail.com"><i className="fas fa-envelope"></i></a></li>
         </ul>
       </div>
       <nav className={styles.navigation}>
         <ul>
-          <li>About Me</li>
-          <li>Experience</li>
-          <li>Portfolio</li>
-          <li>Resume</li>
-          <li>Contact</li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="/resume.pdf">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
           <li><div className={styles.line}></div></li>
         </ul>
       </nav>
@@ -111,10 +111,11 @@ export default function Home() {
             <h1>ROBERT KREGLOH</h1>
             <h3>And I like to build <span className={styles.highlight}>useful</span> things!</h3>
             <p>I am a <span className={styles.highlight}>Front-End Web Developer</span> who has a passion for graphic and interaction design and a background in visual effects and motion graphics</p>
-            <button>Get In Touch</button>
+            <a href="mailto:gxrobb@gmail.com"><button>Get In Touch</button></a>
           </div>
         </section> 
-        
+
+        <div id="about" />
         <section className={`${styles.copySection} ${styles.aboutMe} container`}>
             <div className={styles.title}>
               <h2>About Me</h2>
@@ -150,6 +151,7 @@ export default function Home() {
             </div>
         </section>
 
+        <div id="experience" />
         <section className={`${styles.copySection} ${styles.experience} container`}>
           <div className={styles.title}>
             <h2>Places I&apos;ve Worked At</h2>
@@ -167,26 +169,28 @@ export default function Home() {
           </div>
         </section>
 
-
+        <div id="portfolio" />
         <section className={`${styles.copySection} ${styles.projects} container`}>
           <div className={styles.title}>
-            <h2>Some of my projects</h2>
+            <h2>Some recent projects</h2>
           </div>
           <div className={styles.projectsWrapper}>
-            <ProjectCard imgUrl={'/images/poolgarden.png'} stackList={'Next.js, SASS, Design'} logoCopy={'Pool.Garden'} projectLink={'https://www.pool.garden'} />
-            <ProjectCard imgUrl={'/images/firewalls.png'} stackList={'Wordpress, SASS, PHP, Design'} logoCopy={'Pool.Garden'} projectLink={'https://www.pool.garden'} />
-            <ProjectCard imgUrl={'/images/fwcblog.png'} stackList={'Magento 2, LESS, Docker, PHP, JS'} logoCopy={'Pool.Garden'} projectLink={'https://www.pool.garden'} />
-            <ProjectCard imgUrl={'/images/rpgipsum.png'} stackList={'Laravel, PHP, SASS, JavaScript'} logoCopy={'Pool.Garden'} projectLink={'https://www.pool.garden'} />
+            <ProjectCard imgUrl={'/images/poolgarden.png'} stackList={'Next.js, SASS, Design'} logoCopy={'Pool.Garden'} projectLink={'https://www.pool.garden'} shortDescription={'Chia Cryptocurrency Mining Pool.'} />
+            <ProjectCard imgUrl={'/images/firewalls.png'} stackList={'Wordpress, SASS, PHP, Design'} logoCopy={'Firewalls.com'} projectLink={'https://www.firewalls.com'} shortDescription={'Firewalls Reseller Website.'} />
+            <ProjectCard imgUrl={'/images/fwcblog.png'} stackList={'Magento 2, LESS, Docker, PHP, JS'} logoCopy={'Firewalls.com Blog'} projectLink={'https://www.firewalls.com/blog'} shortDescription={'Firewalls Blog.'} />
+            <ProjectCard imgUrl={'/images/rpgipsum.png'} stackList={'Laravel, PHP, SASS, JavaScript'} logoCopy={'RPG Ipsum'} projectLink={'https://www.rpgipsum.com'} shortDescription={'Lorem Ipsum Generator.'} />
+            <ProjectCard imgUrl={'/images/p1v3.jpg'} stackList={'Wordpress, PHP, SASS, Design, JS'} logoCopy={'Player One Esports'} projectLink={'https://www.playeroneesports.com'} shortDescription={'Esports Gaming Website.'} />
           </div>
         </section>
 
+        <div id="contact" />
         <section className={`${styles.copySection} ${styles.contact} container`}>
           <div className={styles.title}>
             <h2>Contact</h2>
           </div>
           <div className={styles.contactWrapper}>
               <p>If you have any questions, or just want to say hi, feel free to shoot me an email! Click the button below to launch your preferred email client!</p>
-              <button>Email Me</button>
+              <a href="mailto:gxrobb@gmail.com"><button>Email Me</button></a>
             </div>
         </section>
       </main>

@@ -12,6 +12,9 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  &:hover{
+    color:$primaryColor;
+  }
 }
 
 * {
@@ -37,4 +40,27 @@ button{
   &:hover{
       background-color: darken($primaryColor, 20%);
   }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  background: darken($darkColor, 5%);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: darken($darkColor, 5%);
+  color: darken($darkColor, 5%);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: darken($fontColor, 70%);
+  border-radius: 60px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $fontColor;
 }
