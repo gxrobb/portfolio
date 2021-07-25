@@ -54,11 +54,11 @@ export default function Home() {
     },
     {
       id: 5,
-      label: 'JC Marketing',
-      title: 'Graphic Designer @ JC Marketing',
+      label: 'JCMarketing',
+      title: 'Graphic Designer @ JCMarketing',
       date: 'July 2014 - August 2016',
       description: [
-      'At JC Marketing, I assisted the marketing director with graphic assets such as banners, buttons, magazine pages and things of that nature',
+      'At JCMarketing, I assisted the marketing director with graphic assets such as banners, buttons, magazine pages and things of that nature',
       'The majority of my work here consisted of graphical asset requests and a timely creation of the assets. Once in a while, I was asked to assist on some smaller web development projects.',   
       'Some of the skills I use in this position include Design, Photoshop, Illustrator, Indesign, HTML, CSS, jQuery, JavaScript'
       ]
