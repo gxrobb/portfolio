@@ -14,7 +14,7 @@ export default function Home() {
         title: 'Front-End Developer @ Pool.Garden',
         date: 'May 2021 - Present',
         description: [
-        'I work with the Back-End developer to deliver a service for cryptocurrency miners to combine their efforts in a pool.',
+        'I work with a DevOps/Back-End developer in order to maintain and administer a Chia (XCH) mining pool.',
         'Responsibilities include maintaining the front end codebase, adding new features and designing any features or elements as they are needed.',   
         'Some of the skills I use in this position include NextJS, SASS, HTML.'
         ]
@@ -25,7 +25,7 @@ export default function Home() {
         title: 'Senior Front-End Developer @ Firewalls.com',
         date: 'August 2019 - Present',
         description: [
-        'I am currently developing on Magento 2, Wordpress and Laravel to maintain a online firewall reseller website. In addition to development, I also assist the marketing team with the ocasional web banner.',
+        'I am currently developing on Magento 2, Wordpress and Laravel 8 to maintain a online firewall reseller website. In addition to development, I also assist the marketing team with the ocasional web banner.',
         'Part of my responsabilities include managing 3 other developers, deploying code bi-weekly via Bitbucket Pipelines and maintaining the internal API.',   
         'Some of the skills I use in this position include PHP, Laravel, Magent 2 (Zend Framework), Vue3, LESS, SASS, HTML.'
         ]
@@ -36,8 +36,8 @@ export default function Home() {
       title: 'Front-End Developer @ BitLoft',
       date: 'August 2016 - August 2019',
       description: [
-      'While at BitLoft, I wore various hats, as a startup, I had the pleasure of working on both Front-End and Back-End projects. While the majority of my time was spent designing and developing for internal projects as well as agency clients, I also had a chance to expand my skills in some marketing and technology related areas.',
-      'I worked on projects from small wordpress sites, to large laravel SaaS apps. I also assited the marketing director with planning in-person events at conventions, assisted the esports director on various events and projects ranging from configuring television monitors to display ads and create video tralers for upcoming competitions.',   
+      'While at BitLoft, I wore various hats. Working at a startup, I had the pleasure of working on both Front-End and Back-End projects. The majority of my time was spent designing and developing for internal projects as well as agency clients. I also had the chance to expand my skills in some marketing and technology related areas.',
+      'I worked on projects ranging from small wordpress sites to large laravel SaaS apps. I also assited the marketing director with planning in-person events at conventions, assisted the esports director on various events and projects ranging from configuring television monitors to display ads and create video tralers for upcoming competitions.',   
       'Some of the web specific skills I used during my time at BitLoft include Laravel 5, PHP, CSS, SASS, LESS, JavaScript, jQuery, MySQL, Google Cloude Platform, Design and Print Design.'
       ]
     },
@@ -47,8 +47,8 @@ export default function Home() {
       title: 'Web Designer @ 4 Media',
       date: 'February 2015 - May 2016',
       description: [
-      'While at 4 Media, I spent most of my time honing my developer skills. I created over 100 bootstrap websites for various different vendors, small 1 page websites. I ocasionally got more complex projects like landing pages which required a bit of JavaScript.',
-      'My responsibilities here ranged from graphic design, to quick turn over web design and development for fast paced clients.',   
+      'While at 4 Media I created over 50 bootstrap websites for various different clients. I also created landing pages which required a bit of JavaScript and marketing magic.',
+      'My responsibilities here ranged from graphic design to quick turn over web design and development for fast paced clients.',   
       'Some of the skills I use in this position include PHP, CSS, LESS, Twitter Bootstrap, jQuery, JavaScript.'
       ]
     },
@@ -58,8 +58,8 @@ export default function Home() {
       title: 'Graphic Designer @ JCMarketing',
       date: 'July 2014 - August 2016',
       description: [
-      'At JCMarketing, I assisted the marketing director with graphic assets such as banners, buttons, magazine pages and things of that nature',
-      'The majority of my work here consisted of graphical asset requests and a timely creation of the assets. Once in a while, I was asked to assist on some smaller web development projects.',   
+      'At JCMarketing I created web banners, small websites and social media graphics.',
+      'The majority of the work for this client was graphic design related with some html/css fixes peppered in.',   
       'Some of the skills I use in this position include Design, Photoshop, Illustrator, Indesign, HTML, CSS, jQuery, JavaScript'
       ]
     }
@@ -122,8 +122,9 @@ export default function Home() {
             </div>
             <div className={styles.copyGrid}>
               <div className={styles.item}>
-                <p>Welcome to my portfolio! Like I mentioned above, my name is Robert, I tend to go by Robb. I started developing for the web when I was only 12 years old. As soon as I got my own computer (after much pestering!) I fell in love with creating and designing for the web.</p>
-                <p>I started developing for the web professionally in 2015 and have not stopped creating beautiful, useful and intuitive websites and interfaces since!</p>
+                <p>I am a Front-End Developer who works mainly with Next.js (React) and Vue.js. I am adept at building custom web solutions involving JavaScipt, HTML and CSS. I have also been known to dabble with Back End, DevOps and even write a MySQL query every now and then!</p>
+                <p>I started developing for the web professionally in 2015 and have not stopped creating beautiful, useful and intuitive websites and interfaces since! I am what you would call a &ldquo;User Defender&ldquo; when it comes to UX, I love making painless designs that just plain work!</p>
+                <p>Some of my hobbies include watching movies, playing video games, tinkering with new technology, painting miniatures and playing Dungeons & Dragons!</p>
                 <p>Here is a short list of technologies I currently use daily.</p>
                 <div className={styles.ulGrid}>
                   <div>
