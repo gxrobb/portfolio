@@ -10,17 +10,6 @@ export default function Home() {
   const jobList = [
     {
         id: 1,
-        label: 'Pool.Garden',
-        title: 'Front-End Developer @ Pool.Garden',
-        date: 'May 2021 - Present',
-        description: [
-        'I work with a DevOps/Back-End developer in order to maintain and administer a Chia (XCH) mining pool.',
-        'Responsibilities include maintaining the front end codebase, adding new features and designing any features or elements as they are needed.',   
-        'Some of the skills I use in this position include NextJS, SASS, HTML.'
-        ]
-    },
-    {
-        id: 2,
         label: 'Firewalls.com',
         title: 'Senior Front-End Developer @ Firewalls.com',
         date: 'August 2019 - Present',
@@ -29,6 +18,17 @@ export default function Home() {
         'Responsibilities include managing 3 other developers, deploying code bi-weekly via Bitbucket Pipelines and maintaining the internal API.',   
         'Some of the skills I use in this position include PHP, Laravel, Magent 2 (Zend Framework), Vue3, LESS, SASS, HTML.'
         ]
+    },
+    {
+      id: 2,
+      label: 'Pool.Garden',
+      title: 'Front-End Developer @ Pool.Garden',
+      date: 'May 2021 - August 2021',
+      description: [
+      'I worked with a DevOps/Back-End developer in order to maintain and administer a Chia (XCH) mining pool.',
+      'Responsibilities included maintaining the front end codebase, adding new features and designing any features or elements as they are needed. This project will be going offline shortly.',   
+      'Some of the skills I use in this position include NextJS, SASS, HTML.'
+      ]
     },
     {
       id: 3,
