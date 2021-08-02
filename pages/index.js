@@ -176,7 +176,7 @@ export default function Home() {
             <h2>Some recent projects</h2>
           </div>
           <div className={styles.projectsWrapper}>
-            <ProjectCard imgUrl={'/images/poolgarden.png'} stackList={'Next.js, SASS, Design'} logoCopy={'Pool.Garden'} projectLink={'https://www.pool.garden'} shortDescription={'Chia Cryptocurrency Mining Pool.'} />
+            <ProjectCard imgUrl={'/images/poolgarden.png'} stackList={'Next.js, SASS, Design'} logoCopy={'Pool.Garden'} projectLink={'/images/pgfull.png'} shortDescription={'Chia Cryptocurrency Mining Pool.'} />
             <ProjectCard imgUrl={'/images/firewalls.png'} stackList={'Wordpress, SASS, PHP, Design'} logoCopy={'Firewalls.com'} projectLink={'https://www.firewalls.com'} shortDescription={'Firewalls Reseller Website.'} />
             <ProjectCard imgUrl={'/images/fwcblog.png'} stackList={'Magento 2, LESS, Docker, PHP, JS'} logoCopy={'Firewalls.com Blog'} projectLink={'https://www.firewalls.com/blog'} shortDescription={'Firewalls Blog.'} />
             <ProjectCard imgUrl={'/images/rpgipsum.png'} stackList={'Laravel, PHP, SASS, JavaScript'} logoCopy={'RPG Ipsum'} projectLink={'https://www.rpgipsum.com'} shortDescription={'Lorem Ipsum Generator.'} />
