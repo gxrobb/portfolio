@@ -9,18 +9,29 @@ import EmployerDescription from '../components/EmployerDescription.js'
 export default function Home() { 
   const jobList = [
     {
-        id: 1,
+      id: 1,
+      label: 'Datica.com',
+      title: 'Front-End Developer @ Datica.com',
+      date: 'August 2021 - Present',
+      description: [
+      'I work specifically with VueJS 2, along with plugins such as Vuetify Framework and VueFormulate. I helped flush out existing UI and developed a new UI for the current SaaS product.',
+      'The majority of the work consists of integrating an API and allowing users to manage their cloud compliance and their CI/CD pipelines. I worked with a team of back end developers to implement their api into my new UI.',   
+      'Some of the skills I used in this position include, Docker, Vue2, LESS, SASS, HTML, AWS, Git Lab and Adobe Suite'
+      ]
+    },
+    {
+        id: 2,
         label: 'Firewalls.com',
         title: 'Senior Front-End Developer @ Firewalls.com',
-        date: 'August 2019 - Present',
+        date: 'August 2019 - August 2021',
         description: [
-        'I am currently developing on Magento 2, Wordpress and Laravel 8 to maintain a online firewall reseller website. In addition to development, I also assist the marketing team with the ocasional web banner.',
-        'Responsibilities include managing 3 other developers, deploying code bi-weekly via Bitbucket Pipelines and maintaining the internal API.',   
-        'Some of the skills I use in this position include PHP, Laravel, Magent 2 (Zend Framework), Vue3, LESS, SASS, HTML.'
+        'I developed on Magento 2, Wordpress and Laravel 8 to maintain an online firewall reseller website. In addition to development, I also assisted the marketing team with the ocasional web banner.',
+        'Responsibilities included managing 3 other developers, deploying code bi-weekly via Bitbucket Pipelines and maintaining the internal API.',   
+        'Some of the skills I used in this position included PHP, Laravel, Magent 2 (Zend Framework), Vue3, LESS, SASS, HTML.'
         ]
     },
     {
-      id: 2,
+      id: 3,
       label: 'Pool.Garden',
       title: 'Front-End Developer @ Pool.Garden',
       date: 'May 2021 - August 2021',
@@ -31,7 +42,7 @@ export default function Home() {
       ]
     },
     {
-      id: 3,
+      id: 4,
       label: 'BitLoft',
       title: 'Front-End Developer @ BitLoft',
       date: 'August 2016 - August 2019',
@@ -42,7 +53,7 @@ export default function Home() {
       ]
     },
     {
-      id: 4,
+      id: 5,
       label: '4 Media',
       title: 'Web Designer @ 4 Media',
       date: 'February 2015 - May 2016',
@@ -53,7 +64,7 @@ export default function Home() {
       ]
     },
     {
-      id: 5,
+      id: 6,
       label: 'JCMarketing',
       title: 'Graphic Designer @ JCMarketing',
       date: 'July 2014 - August 2016',
@@ -130,15 +141,14 @@ export default function Home() {
                   <div>
                     <ul>
                       <li>JavaScript</li>
-                      <li>Next.js</li>
                       <li>Vue.js</li>
+                      <li>SASS</li>
                     </ul>
                   </div>
                   <div>
                     <ul>
                       <li>Docker</li>
-                      <li>React</li>
-                      <li>Netlify</li>
+                      <li>Adobe Suite</li>
                     </ul>
                   </div>
                 </div>
