@@ -135,7 +135,7 @@ export default function Home() {
               <div className={styles.item}>
                 <p>I am a Front-End Developer who works mainly with Next.js (React) and Vue.js. I am adept at building custom web solutions involving JavaScipt, HTML and CSS. I have also been known to dabble with Back End, DevOps, and even write a MySQL query every now and then!</p>
                 <p>I started developing for the web professionally in 2015 and have not stopped creating beautiful, useful and intuitive websites and interfaces since! I am what you would call a &ldquo;User Defender&ldquo; when it comes to UX. I love making painless designs that just plain work!</p>
-                <p>Some of my hobbies include watching movies, playing video games, tinkering with new technology, painting miniatures and playing Dungeons & Dragons!</p>
+                <p>Some of my hobbies include playing with my newborn daughter, playing video games(when she lets me!), tinkering with new technology, painting miniatures and playing Dungeons & Dragons!</p>
                 <p>Here is a short list of technologies I currently use daily.</p>
                 <div className={styles.ulGrid}>
                   <div>
@@ -149,6 +149,8 @@ export default function Home() {
                     <ul>
                       <li>Docker</li>
                       <li>Adobe Suite</li>
+                      <li>Postman</li>
+                      <li>VS Code</li>
                     </ul>
                   </div>
                 </div>
