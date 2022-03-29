@@ -1,4 +1,3 @@
-// ParagraphInput.js
 import React, { useState } from 'react'
 export default function ParagraphInput({ onSubmit }) {
     const [paragraphNumber, setParagraphNumber] = useState(5);
@@ -19,7 +18,7 @@ export default function ParagraphInput({ onSubmit }) {
                     </div>
                     <div className="col-md-10">
                         <h2>Looking to add some fun to your filler text?</h2>
-                        <h5>Let's Spiffy up your copy with some RPG inspired Lorem Ipsum!</h5>
+                        <h5>Let`&apos;`s Spiffy up your copy with some RPG inspired Lorem Ipsum!</h5>
 
                         <div className="form-container">
                             <p>First, select how many paragraphs you want.  
