@@ -1,12 +1,37 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
 import profilePic from '../public/images/me.jpg'
 import ProjectCard from '../components/ProjectCard.js'
 import EmployerDescription from '../components/EmployerDescription.js'
+import axios from 'axios'
+import Link from 'next/link'
+const API_BASE = process.env.NEXT_PUBLIC_API_BASE;
+export const getStaticProps = async () => {
+  const res = await fetch(`${API_BASE}/post`);
+  const posts = await res.json();
+  return {
+    props: {
+      thePosts: posts
+    },
+  };
+}
 
-export default function Home() { 
+
+
+
+
+// async function getData(){
+//   return ;
+// }
+//declare a variable then set result of an api call to its value
+
+export default function Home({ninjas, thePosts}) { 
+ 
+
+  
+
   const jobList = [
     {
       id: 1,
@@ -20,15 +45,15 @@ export default function Home() {
       ]
     },
     {
-        id: 2,
-        label: 'Firewalls.com',
-        title: 'Senior Front-End Developer @ Firewalls.com',
-        date: 'August 2019 - August 2021',
-        description: [
-        'I developed on Magento 2, Wordpress and Laravel 8 to maintain an online firewall reseller website. In addition to development, I also assisted the marketing team with the ocasional web banner.',
-        'Responsibilities included managing 3 other developers, deploying code bi-weekly via Bitbucket Pipelines and maintaining the internal API.',   
-        'Some of the skills I used in this position included PHP, Laravel, Magent 2 (Zend Framework), Vue3, LESS, SASS, HTML.'
-        ]
+      id: 2,
+      label: 'Firewalls.com',
+      title: 'Senior Front-End Developer @ Firewalls.com',
+      date: 'August 2019 - August 2021',
+      description: [
+      'I developed on Magento 2, Wordpress and Laravel 8 to maintain an online firewall reseller website. In addition to development, I also assisted the marketing team with the ocasional web banner.',
+      'Responsibilities included managing 3 other developers, deploying code bi-weekly via Bitbucket Pipelines and maintaining the internal API.',   
+      'Some of the skills I used in this position included PHP, Laravel, Magent 2 (Zend Framework), Vue3, LESS, SASS, HTML.'
+      ]
     },
     {
       id: 3,
@@ -88,14 +113,24 @@ export default function Home() {
     }
     
   return (
-    <div>
+    <>
       <Head>
         <title>Robert Kregloh&apos;s Portfolio</title>
         <meta name="description" content="Welcome to my portfolio!" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className={styles.socialIcons}>
+      {thePosts.map(post => (
+        <p>
+          <Link href={'/blog/' + post.title} key={post.title}>
+            {post.title}
+          </Link>
+        </p>
+
+      ))}
+
+
+      {/* <div className={styles.socialIcons}>
         <ul>
           <li><div className={styles.line}></div></li>
           <li><a href="https://www.linkedin.com/in/rkregloh/" target="_blank" rel="noreferrer"><i className="fab fa-linkedin-in"></i></a></li>
@@ -112,7 +147,7 @@ export default function Home() {
           <li><a href="#contact">Contact</a></li>
           <li><div className={styles.line}></div></li>
         </ul>
-      </nav>
+      </nav> */}
  
 
       <main className={styles.main}>
@@ -124,9 +159,10 @@ export default function Home() {
             <p>I am a <span className={styles.highlight}>Front-End Web Developer</span> who has a passion for graphic and interaction design and a background in visual effects and motion graphics</p>
             <a href="mailto:gxrobb@gmail.com"><button>Get In Touch</button></a>
           </div>
+
         </section> 
 
-        <div id="about" />
+        {/* <div id="about" />
         <section className={`${styles.copySection} ${styles.aboutMe} container`}>
             <div className={styles.title}>
               <h2>About Me</h2>
@@ -162,10 +198,10 @@ export default function Home() {
                 </div>
               </div>
             </div>
-        </section>
+        </section> */}
 
-        <div id="experience" />
-        <section className={`${styles.copySection} ${styles.experience} container`}>
+        {/* <div id="experience" /> */}
+        {/* <section className={`${styles.copySection} ${styles.experience} container`}>
           <div className={styles.title}>
             <h2>Places I&apos;ve Worked</h2>
           </div>
@@ -180,9 +216,9 @@ export default function Home() {
               <EmployerDescription jobObject={activeEmployer}/>
             </div>
           </div>
-        </section>
+        </section> */}
 
-        <div id="portfolio" />
+        {/* <div id="portfolio" />
         <section className={`${styles.copySection} ${styles.projects} container`}>
           <div className={styles.title}>
             <h2>Some recent projects</h2>
@@ -194,9 +230,9 @@ export default function Home() {
             <ProjectCard imgUrl={'/images/rpgipsum.png'} stackList={'Laravel, PHP, SASS, JavaScript'} logoCopy={'RPG Ipsum'} projectLink={'https://www.rpgipsum.com'} shortDescription={'Lorem Ipsum Generator.'} />
             <ProjectCard imgUrl={'/images/p1v3.jpg'} stackList={'Wordpress, PHP, SASS, Design, JS'} logoCopy={'Player One Esports'} projectLink={'https://www.playeroneesports.com'} shortDescription={'Esports Gaming Website.'} />
           </div>
-        </section>
+        </section> */}
 
-        <div id="contact" />
+        {/* <div id="contact" />
         <section className={`${styles.copySection} ${styles.contact} container`}>
           <div className={styles.title}>
             <h2>Contact</h2>
@@ -205,11 +241,11 @@ export default function Home() {
               <p>If you have any questions, or just want to say hi, feel free to shoot me an email! Click the button below to launch your preferred email client!</p>
               <a href="mailto:gxrobb@gmail.com"><button>Email Me</button></a>
             </div>
-        </section>
+        </section> */}
       </main>
-      <footer className={styles.footer}>
+      {/* <footer className={styles.footer}>
         <p>Designed And Developed By Robert Kregloh | Deployed On Netlify!</p>
-      </footer>
-    </div>
+      </footer> */}
+    </>
   )
 }
