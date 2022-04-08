@@ -1,3 +1,5 @@
+import markdownToHtml from '../../lib/markdownToHtml'
+
 export const getStaticPaths = async () => {
 	const res = await fetch(`${API_BASE}/post`);
   const data = await res.json();
@@ -20,18 +22,20 @@ export const getStaticProps = async (context) => {
 	const res = await fetch(`${API_BASE}/post/${id}`);
 	const data = await res.json();
   console.log(data)
+
+  const content = await markdownToHtml(data.content);
 	return {
-		props: { post : data }
+		props: { post : data, content }
 	}
 }
 
 const API_BASE = process.env.NEXT_PUBLIC_API_BASE;
 
-const Post = ( { post }) => {
+const Post = ( { post, content }) => {
 	return (
 		<div>
-      <h1>{post.title}</h1>
-			<p>{post.content}</p>
+      <div dangerouslySetInnerHTML={ { __html: content } }>
+        </div>
 		</div>
 	);
 }
