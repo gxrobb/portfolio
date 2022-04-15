@@ -6,8 +6,6 @@ import profilePic from '../public/images/me.jpg'
 import ProjectCard from '../components/ProjectCard.js'
 import EmployerDescription from '../components/EmployerDescription.js'
 import Link from 'next/link'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFaceRelieved } from '@fortawesome/pro-solid-svg-icons'
 
 export default function Home() { 
 
@@ -100,20 +98,19 @@ export default function Home() {
         <meta name="description" content="Welcome to my portfolio!" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <FontAwesomeIcon icon={faFaceRelieved} />
       <div className={styles.socialIcons}>
         <ul>
           <li><div className={styles.line}></div></li>
-          {/* <li>
+          <li>
             <a href="https://www.linkedin.com/in/rkregloh/" target="_blank" rel="noreferrer">
               <i className="fab fa-linkedin-in"></i>
             </a>
-          </li> */}
-          {/* <li>
+          </li>
+          <li>
             <a href="https://github.com/gxrobb" target="_blank" rel="noreferrer">
               <i className="fab fa-github"></i>
             </a>
-          </li> */}
+          </li>
           <li>
             <a href="mailto:gxrobb@gmail.com">
               <i className="fas fa-envelope"></i>
@@ -201,7 +198,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* <div id="portfolio" />
+        <div id="portfolio" />
         <section className={`${styles.copySection} ${styles.projects} container`}>
           <div className={styles.title}>
             <h2>Some recent projects</h2>
@@ -213,9 +210,9 @@ export default function Home() {
             <ProjectCard imgUrl={'/images/rpgipsum.png'} stackList={'Laravel, PHP, SASS, JavaScript'} logoCopy={'RPG Ipsum'} projectLink={'https://www.rpgipsum.com'} shortDescription={'Lorem Ipsum Generator.'} />
             <ProjectCard imgUrl={'/images/p1v3.jpg'} stackList={'Wordpress, PHP, SASS, Design, JS'} logoCopy={'Player One Esports'} projectLink={'https://www.playeroneesports.com'} shortDescription={'Esports Gaming Website.'} />
           </div>
-        </section> */}
+        </section>
 
-        {/* <div id="contact" />
+        <div id="contact" />
         <section className={`${styles.copySection} ${styles.contact} container`}>
           <div className={styles.title}>
             <h2>Contact</h2>
@@ -224,11 +221,11 @@ export default function Home() {
               <p>If you have any questions, or just want to say hi, feel free to shoot me an email! Click the button below to launch your preferred email client!</p>
               <a href="mailto:gxrobb@gmail.com"><button>Email Me</button></a>
             </div>
-        </section> */}
+        </section>
       </main>
-      {/* <footer className={styles.footer}>
+      <footer className={styles.footer}>
         <p>Designed And Developed By Robert Kregloh | Deployed On Netlify!</p>
-      </footer> */}
+      </footer>
     </>
   )
 }
