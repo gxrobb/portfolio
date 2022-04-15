@@ -1,36 +1,15 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
 import profilePic from '../public/images/me.jpg'
 import ProjectCard from '../components/ProjectCard.js'
 import EmployerDescription from '../components/EmployerDescription.js'
-import axios from 'axios'
 import Link from 'next/link'
-const API_BASE = process.env.NEXT_PUBLIC_API_BASE;
-export const getStaticProps = async () => {
-  const res = await fetch(`${API_BASE}/post`);
-  const posts = await res.json();
-  return {
-    props: {
-      thePosts: posts
-    },
-  };
-}
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFaceRelieved } from '@fortawesome/pro-solid-svg-icons'
 
-
-
-
-
-// async function getData(){
-//   return ;
-// }
-//declare a variable then set result of an api call to its value
-
-export default function Home({ninjas, thePosts}) { 
- 
-
-  
+export default function Home() { 
 
   const jobList = [
     {
@@ -107,7 +86,9 @@ export default function Home({ninjas, thePosts}) {
   function ListAllTitles(data){
       return (
         <>
-          {data.data.map((value) => {return <li onClick={ () => setActiveEmployer(value) }  className={activeEmployer.id == value.id ? styles.active : null} key="id"> {value.label} </li>})}
+          {
+            data.data.map((value) => {
+              return <li onClick={ () => setActiveEmployer(value) }  className={activeEmployer.id == value.id ? styles.active : null} key={value.id}> {value.label} </li>})}
         </>
       )
     }
@@ -119,23 +100,25 @@ export default function Home({ninjas, thePosts}) {
         <meta name="description" content="Welcome to my portfolio!" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      {thePosts.map(post => (
-        <p>
-          <Link href={'/blog/' + post.title} key={post.title}>
-            {post.title}
-          </Link>
-        </p>
-
-      ))}
-
-
-      {/* <div className={styles.socialIcons}>
+      <FontAwesomeIcon icon={faFaceRelieved} />
+      <div className={styles.socialIcons}>
         <ul>
           <li><div className={styles.line}></div></li>
-          <li><a href="https://www.linkedin.com/in/rkregloh/" target="_blank" rel="noreferrer"><i className="fab fa-linkedin-in"></i></a></li>
-          <li><a href="https://github.com/gxrobb" target="_blank" rel="noreferrer"><i className="fab fa-github"></i></a></li>
-          <li><a href="mailto:gxrobb@gmail.com"><i className="fas fa-envelope"></i></a></li>
+          {/* <li>
+            <a href="https://www.linkedin.com/in/rkregloh/" target="_blank" rel="noreferrer">
+              <i className="fab fa-linkedin-in"></i>
+            </a>
+          </li> */}
+          {/* <li>
+            <a href="https://github.com/gxrobb" target="_blank" rel="noreferrer">
+              <i className="fab fa-github"></i>
+            </a>
+          </li> */}
+          <li>
+            <a href="mailto:gxrobb@gmail.com">
+              <i className="fas fa-envelope"></i>
+            </a>
+          </li>
         </ul>
       </div>
       <nav className={styles.navigation}>
@@ -147,7 +130,7 @@ export default function Home({ninjas, thePosts}) {
           <li><a href="#contact">Contact</a></li>
           <li><div className={styles.line}></div></li>
         </ul>
-      </nav> */}
+      </nav>
  
 
       <main className={styles.main}>
@@ -162,7 +145,7 @@ export default function Home({ninjas, thePosts}) {
 
         </section> 
 
-        {/* <div id="about" />
+        <div id="about" />
         <section className={`${styles.copySection} ${styles.aboutMe} container`}>
             <div className={styles.title}>
               <h2>About Me</h2>
@@ -198,10 +181,10 @@ export default function Home({ninjas, thePosts}) {
                 </div>
               </div>
             </div>
-        </section> */}
+        </section>
 
-        {/* <div id="experience" /> */}
-        {/* <section className={`${styles.copySection} ${styles.experience} container`}>
+        <div id="experience" />
+        <section className={`${styles.copySection} ${styles.experience} container`}>
           <div className={styles.title}>
             <h2>Places I&apos;ve Worked</h2>
           </div>
@@ -216,7 +199,7 @@ export default function Home({ninjas, thePosts}) {
               <EmployerDescription jobObject={activeEmployer}/>
             </div>
           </div>
-        </section> */}
+        </section>
 
         {/* <div id="portfolio" />
         <section className={`${styles.copySection} ${styles.projects} container`}>
