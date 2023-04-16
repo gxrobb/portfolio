@@ -79,23 +79,22 @@ export default function Home() {
             </div>
             <div className={styles.copyGrid}>
               <div className={styles.item}>
-                <p>I am a Front-End Developer who works mainly with Next.js (React) and Vue.js. I am adept at building custom web solutions involving JavaScipt, HTML and CSS. I have also been known to dabble with Back End, DevOps, and even write a MySQL query every now and then!</p>
-                <p>I started developing for the web professionally in 2015 and have not stopped creating beautiful, useful and intuitive websites and interfaces since! I am what you would call a &ldquo;User Defender&ldquo; when it comes to UX. I love making painless designs that just plain work!</p>
-                <p>Some of my hobbies include playing with my newborn daughter, playing video games(when she lets me!), tinkering with new technology, painting miniatures and playing Dungeons & Dragons!</p>
-                <p>Here is a short list of technologies I currently use daily.</p>
+                <p>I am a Front-End Developer based in Indiana. I started developing for the web professionally in 2015 and have not stopped creating beautiful, useful and intuitive websites since! I heard a term once in a podcast that I feel describes my passion, a “User Defender”. Usability is always at the forefront of anything I design or build. I love creating great designs that just plain work!</p>
+                <p>Some of my hobbies include spending time with my wife and daughter, tinkering with new technology, video games, painting miniature figures and I love a good craft beer while playing Dungeons and Dragons with my friends!</p>
+                <p>Below are some of the technologies I have been working with most recently.</p>
                 <div className={styles.ulGrid}>
                   <div>
                     <ul>
-                      <li>JavaScript</li>
+                      <li>TypeScript</li>
                       <li>Vue.js</li>
+                      <li>Jest</li>
                       <li>SASS</li>
                     </ul>
                   </div>
                   <div>
                     <ul>
                       <li>Docker</li>
-                      <li>Adobe Suite</li>
-                      <li>Postman</li>
+                      <li>JavaScript</li>
                       <li>VS Code</li>
                     </ul>
                   </div>
@@ -136,6 +135,7 @@ export default function Home() {
           </div>
           <div className={styles.projectsWrapper}>
             <ProjectCard 
+              id="pool-garden"
               imgUrl={'/images/poolgarden.png'}
               stackList={'Next.js, SASS, Design'}
               logoCopy={'Pool.Garden'}
@@ -143,6 +143,7 @@ export default function Home() {
               shortDescription={'Chia Cryptocurrency Mining Pool.'}
             />
             <ProjectCard 
+              id={'firewalls.com'}
               imgUrl={'/images/firewalls.png'} 
               stackList={'Magento 2, LESS, Docker, PHP, JS'}
               logoCopy={'Firewalls.com'}
@@ -150,6 +151,7 @@ export default function Home() {
               shortDescription={'Firewalls Reseller Website.'}
             />
             <ProjectCard
+              id={'firewalls-blog'}
               imgUrl={'/images/fwcblog.png'}
               stackList={'Wordpress, SASS, PHP, Design'}
               logoCopy={'Firewalls.com Blog'}
@@ -157,6 +159,7 @@ export default function Home() {
               shortDescription={'Firewalls Blog.'}
             />
             <ProjectCard
+              id={'rpg-ipsum'}
               imgUrl={'/images/rpgipsum.jpg'}
               stackList={'JavaScript'}
               logoCopy={'RPG Ipsum'}

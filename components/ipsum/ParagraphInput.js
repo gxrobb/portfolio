@@ -3,16 +3,14 @@ export default function ParagraphInput({ onSubmit }) {
     const [paragraphNumber, setParagraphNumber] = useState(5);
     const [sentenceLength, setSentenceLength] = useState(5);
     const [showParagraph, setShowParagraph] = useState(true);
-    
-
   
     return (
       <div>
-        {/* ... */}
         <div className="container">
                 <div className="row">
                     <div className="col-md-2 d-sm-none d-xs-none d-md-block d-none">
                         <a href="/"><button>Back To Portfolio</button></a>
+                        <p><strong>Note:</strong> This is a work in progress.  I'm still working on the styling and functionality.</p>
                         {/* <img src="public/images/Bard.jpg" alt="Lorem Ipsum Bard!" className="img-fluid" /> */}
                     </div>
                     <div className="col-md-10">
@@ -21,6 +19,7 @@ export default function ParagraphInput({ onSubmit }) {
 
                         <div className="form-container">
                             <p>First, select how many paragraphs you want.  
+                                <br />
                                 <input 
                                     type="number" 
                                     name="para" 

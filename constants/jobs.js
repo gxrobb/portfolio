@@ -28,9 +28,9 @@ export const jobList = [
     title: 'Senior Front-End Developer @ Firewalls.com',
     date: 'August 2019 - August 2021',
     description: [
-    'I developed on Magento 2, Wordpress and Laravel 8 to maintain an online firewall reseller website. In addition to development, I also assisted the marketing team with the ocasional web banner.',
+    'I developed on Magento 2, Wordpress and Laravel 8 to maintain an online firewall reseller website. In addition to development, I also assisted the marketing team with the occasional web banner.',
     'Responsibilities included managing 3 other developers, deploying code bi-weekly via Bitbucket Pipelines and maintaining the internal API.',   
-    'Some of the skills I used in this position included PHP, Laravel, Magent 2 (Zend Framework), Vue3, LESS, SASS, HTML.'
+    'Some of the skills I used in this position included PHP, Laravel, Magento 2 (Zend Framework), Vue3, LESS, SASS, HTML.'
     ]
   },
   {
@@ -51,8 +51,8 @@ export const jobList = [
     date: 'August 2016 - August 2019',
     description: [
     'While at BitLoft, I wore various hats. Working at a startup, I had the pleasure of working on both Front-End and Back-End projects. The majority of my time was spent designing and developing for internal projects as well as agency clients. I also had the chance to expand my skills in some marketing and technology related areas.',
-    'I worked on projects ranging from small wordpress sites to large Laravel SaaS apps. I also assited the marketing director with planning in-person events at conventions, assisted the esports director on various events and projects ranging from configuring television monitors to display ads and create video tralers for upcoming competitions.',   
-    'Some of the web specific skills I used during my time at BitLoft include Laravel 5, PHP, CSS, SASS, LESS, JavaScript, jQuery, MySQL, Google Cloude Platform, Design and Print Design.'
+    'I worked on projects ranging from small wordpress sites to large Laravel SaaS apps. I also assisted the marketing director with planning in-person events at conventions, assisted the esports director on various events and projects ranging from configuring television monitors to display ads and create video trailers for upcoming competitions.',   
+    'Some of the web specific skills I used during my time at BitLoft include Laravel 5, PHP, CSS, SASS, LESS, JavaScript, jQuery, MySQL, Google Cloud Platform, Design and Print Design.'
     ]
   },
   {
