@@ -131,7 +131,8 @@ export default function Home() {
         <div id="portfolio" />
         <section className={`${styles.copySection} ${styles.projects} container`}>
           <div className={styles.title}>
-            <h2>Some recent projects</h2>
+            <h2>Some projects</h2>
+            <p><strong>Note:</strong> My last 2 positions involved private apps and I am not able to share any visuals but would love to elaborate in a conversation!</p>
           </div>
           <div className={styles.projectsWrapper}>
             <ProjectCard 
