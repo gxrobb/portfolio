@@ -9,16 +9,15 @@ export default function ParagraphInput({ onSubmit }) {
     return (
       <div>
         {/* ... */}
-
-
         <div className="container">
                 <div className="row">
                     <div className="col-md-2 d-sm-none d-xs-none d-md-block d-none">
+                        <a href="/"><button>Back To Portfolio</button></a>
                         {/* <img src="public/images/Bard.jpg" alt="Lorem Ipsum Bard!" className="img-fluid" /> */}
                     </div>
                     <div className="col-md-10">
                         <h2>Looking to add some fun to your filler text?</h2>
-                        <h5>Let`&apos;`s Spiffy up your copy with some RPG inspired Lorem Ipsum!</h5>
+                        <h5>Let's Spiffy up your copy with some RPG inspired Lorem Ipsum!</h5>
 
                         <div className="form-container">
                             <p>First, select how many paragraphs you want.  

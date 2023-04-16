@@ -156,19 +156,19 @@ export default function Home() {
               shortDescription={'Firewalls Blog.'}
             />
             <ProjectCard
-              imgUrl={'/images/rpgipsum.png'}
-              stackList={'Laravel, PHP, SASS, JavaScript'}
+              imgUrl={'/images/rpgipsum.jpg'}
+              stackList={'JavaScript'}
               logoCopy={'RPG Ipsum'}
-              projectLink={'https://www.rpgipsum.com'}
+              projectLink={'/rpgIpsum'}
               shortDescription={'Lorem Ipsum Generator.'}
             />
-            <ProjectCard
+            {/* <ProjectCard
               imgUrl={'/images/p1v3.jpg'}
               stackList={'Wordpress, PHP, SASS, Design, JS'}
               logoCopy={'Player One Esports'}
               projectLink={'https://www.playeroneesports.com'}
               shortDescription={'Esports Gaming Website.'}
-            />
+            /> */}
           </div>
         </section>
 

@@ -6,7 +6,8 @@ export const jobList = [
     date: 'June 2022 - April 2023',
     description: [
     'Collaborated with UX Designers and Back End developers to deploy, maintain and develop various SaaS applications under the Cofense umbrella. ',
-    'I also contributed to the development of internal development tools.',   
+    'I also contributed to the development of internal development tools, reviewed code and provided support/guidance to junior developers.',   
+    'Acted as an intermediary between the product owners and the development team to help prioritize and plan out the development of new features and bug fixes.',
     'Primary tools included Vuejs, GitLab, and a Vue JS Component Library.'
     ]
   },
