@@ -6,9 +6,9 @@ export const jobList = [
     date: 'June 2022 - April 2023',
     description: [
     'Collaborated with UX Designers and Back End developers to deploy, maintain and develop various SaaS applications under the Cofense umbrella. ',
-    'I also contributed to the development of internal development tools, reviewed code and provided support/guidance to junior developers.',   
-    'Acted as an intermediary between the product owners and the development team to help prioritize and plan out the development of new features and bug fixes.',
-    'Primary tools included Vuejs, GitLab, and a Vue JS Component Library.'
+    'Contributed to the development of internal development tools, reviewed code and provided support and guidance to junior developers.',   
+    'Worked with product owners and the development team to help prioritize and plan out the development of new features and bug fixes.',
+    'Some of the skills I used in this position included Vue.js, GitLab, and a Vue.js Component Library.'
     ]
   },
   {
@@ -17,9 +17,9 @@ export const jobList = [
     title: 'Front-End Developer @ Datica',
     date: 'August 2021 - May 2022',
     description: [
-    'I worked specifically with VueJS 2, along with plugins such as Vuetify Framework and VueFormulate. I helped flush out existing UI and developed a new UI for the current SaaS product.',
-    'The majority of the work consists of integrating an API and allowing users to manage their cloud compliance and their CI/CD pipelines. I worked with a team of back end developers to implement their api into my new UI.',   
-    'Some of the skills I used in this position include, Docker, Vue2, LESS, SASS, HTML, AWS, Git Lab and Adobe Suite'
+    'Worked with Vue.js, along with plugins such as Vuetify Framework and VueFormulate. I helped flush out existing UI and developed a new UI for the current SaaS product.',
+    'The majority of the work consisted of integrating an API with the UI in order to allow users to manage their cloud compliance and their CI/CD pipelines.',   
+    'Some of the skills I used in this position included, Docker, Vue2, LESS, SASS, HTML, AWS, Git Lab and Adobe Suite'
     ]
   },
   {
