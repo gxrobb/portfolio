@@ -5,79 +5,9 @@ import styles from '../styles/Home.module.scss'
 import profilePic from '../public/images/me.jpg'
 import ProjectCard from '../components/ProjectCard.js'
 import EmployerDescription from '../components/EmployerDescription.js'
-import Link from 'next/link'
+import { jobList } from '../constants/jobs.js'
 
 export default function Home() { 
-
-  const jobList = [
-    {
-      id: 1,
-      label: 'Datica.com',
-      title: 'Front-End Developer @ Datica.com',
-      date: 'August 2021 - Present',
-      description: [
-      'I work specifically with VueJS 2, along with plugins such as Vuetify Framework and VueFormulate. I helped flush out existing UI and developed a new UI for the current SaaS product.',
-      'The majority of the work consists of integrating an API and allowing users to manage their cloud compliance and their CI/CD pipelines. I worked with a team of back end developers to implement their api into my new UI.',   
-      'Some of the skills I used in this position include, Docker, Vue2, LESS, SASS, HTML, AWS, Git Lab and Adobe Suite'
-      ]
-    },
-    {
-      id: 2,
-      label: 'Firewalls.com',
-      title: 'Senior Front-End Developer @ Firewalls.com',
-      date: 'August 2019 - August 2021',
-      description: [
-      'I developed on Magento 2, Wordpress and Laravel 8 to maintain an online firewall reseller website. In addition to development, I also assisted the marketing team with the ocasional web banner.',
-      'Responsibilities included managing 3 other developers, deploying code bi-weekly via Bitbucket Pipelines and maintaining the internal API.',   
-      'Some of the skills I used in this position included PHP, Laravel, Magent 2 (Zend Framework), Vue3, LESS, SASS, HTML.'
-      ]
-    },
-    {
-      id: 3,
-      label: 'Pool.Garden',
-      title: 'Front-End Developer @ Pool.Garden',
-      date: 'May 2021 - August 2021',
-      description: [
-      'I worked with a DevOps/Back-End developer in order to maintain and administer a Chia (XCH) mining pool.',
-      'Responsibilities included maintaining the front end codebase, adding new features and designing any features or elements as they are needed. This project will be going offline shortly.',   
-      'Some of the skills I use in this position include NextJS, SASS, HTML.'
-      ]
-    },
-    {
-      id: 4,
-      label: 'BitLoft',
-      title: 'Front-End Developer @ BitLoft',
-      date: 'August 2016 - August 2019',
-      description: [
-      'While at BitLoft, I wore various hats. Working at a startup, I had the pleasure of working on both Front-End and Back-End projects. The majority of my time was spent designing and developing for internal projects as well as agency clients. I also had the chance to expand my skills in some marketing and technology related areas.',
-      'I worked on projects ranging from small wordpress sites to large Laravel SaaS apps. I also assited the marketing director with planning in-person events at conventions, assisted the esports director on various events and projects ranging from configuring television monitors to display ads and create video tralers for upcoming competitions.',   
-      'Some of the web specific skills I used during my time at BitLoft include Laravel 5, PHP, CSS, SASS, LESS, JavaScript, jQuery, MySQL, Google Cloude Platform, Design and Print Design.'
-      ]
-    },
-    {
-      id: 5,
-      label: '4 Media',
-      title: 'Web Designer @ 4 Media',
-      date: 'February 2015 - May 2016',
-      description: [
-      'While at 4 Media I created over 50 bootstrap websites for various different clients. I also created landing pages which required a bit of JavaScript and marketing magic.',
-      'My responsibilities ranged from graphic design to quick turn over web design and development for fast-paced clients.',   
-      'Some of the skills I use in this position include PHP, CSS, LESS, Twitter Bootstrap, jQuery, JavaScript.'
-      ]
-    },
-    {
-      id: 6,
-      label: 'JCMarketing',
-      title: 'Graphic Designer @ JCMarketing',
-      date: 'July 2014 - August 2016',
-      description: [
-      'At JCMarketing, I created web banners, small websites and social media graphics.',
-      'The majority of the work for this client was graphic design related with some html/css fixes peppered in.',   
-      'Some of the skills I use in this position include Design, Photoshop, Illustrator, Indesign, HTML, CSS, jQuery, JavaScript'
-      ]
-    }
-  ]
-
 
   const [activeEmployer, setActiveEmployer] = useState(jobList[0]);
 
@@ -204,11 +134,41 @@ export default function Home() {
             <h2>Some recent projects</h2>
           </div>
           <div className={styles.projectsWrapper}>
-            <ProjectCard imgUrl={'/images/poolgarden.png'} stackList={'Next.js, SASS, Design'} logoCopy={'Pool.Garden'} projectLink={'/images/pgfull.png'} shortDescription={'Chia Cryptocurrency Mining Pool.'} />
-            <ProjectCard imgUrl={'/images/firewalls.png'} stackList={'Wordpress, SASS, PHP, Design'} logoCopy={'Firewalls.com'} projectLink={'https://www.firewalls.com'} shortDescription={'Firewalls Reseller Website.'} />
-            <ProjectCard imgUrl={'/images/fwcblog.png'} stackList={'Magento 2, LESS, Docker, PHP, JS'} logoCopy={'Firewalls.com Blog'} projectLink={'https://www.firewalls.com/blog'} shortDescription={'Firewalls Blog.'} />
-            <ProjectCard imgUrl={'/images/rpgipsum.png'} stackList={'Laravel, PHP, SASS, JavaScript'} logoCopy={'RPG Ipsum'} projectLink={'https://www.rpgipsum.com'} shortDescription={'Lorem Ipsum Generator.'} />
-            <ProjectCard imgUrl={'/images/p1v3.jpg'} stackList={'Wordpress, PHP, SASS, Design, JS'} logoCopy={'Player One Esports'} projectLink={'https://www.playeroneesports.com'} shortDescription={'Esports Gaming Website.'} />
+            <ProjectCard 
+              imgUrl={'/images/poolgarden.png'}
+              stackList={'Next.js, SASS, Design'}
+              logoCopy={'Pool.Garden'}
+              projectLink={'/images/pgfull.png'}
+              shortDescription={'Chia Cryptocurrency Mining Pool.'}
+            />
+            <ProjectCard 
+              imgUrl={'/images/firewalls.png'} 
+              stackList={'Magento 2, LESS, Docker, PHP, JS'}
+              logoCopy={'Firewalls.com'}
+              projectLink={'https://www.firewalls.com'}
+              shortDescription={'Firewalls Reseller Website.'}
+            />
+            <ProjectCard
+              imgUrl={'/images/fwcblog.png'}
+              stackList={'Wordpress, SASS, PHP, Design'}
+              logoCopy={'Firewalls.com Blog'}
+              projectLink={'https://www.firewalls.com/blog'}
+              shortDescription={'Firewalls Blog.'}
+            />
+            <ProjectCard
+              imgUrl={'/images/rpgipsum.png'}
+              stackList={'Laravel, PHP, SASS, JavaScript'}
+              logoCopy={'RPG Ipsum'}
+              projectLink={'https://www.rpgipsum.com'}
+              shortDescription={'Lorem Ipsum Generator.'}
+            />
+            <ProjectCard
+              imgUrl={'/images/p1v3.jpg'}
+              stackList={'Wordpress, PHP, SASS, Design, JS'}
+              logoCopy={'Player One Esports'}
+              projectLink={'https://www.playeroneesports.com'}
+              shortDescription={'Esports Gaming Website.'}
+            />
           </div>
         </section>
 
