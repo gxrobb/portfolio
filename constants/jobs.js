@@ -17,7 +17,7 @@ export const jobList = [
     title: 'Front-End Developer @ Datica',
     date: 'August 2021 - May 2022',
     description: [
-    'Worked with Vue.js, along with plugins such as Vuetify Framework and VueFormulate. I helped flush out existing UI and developed a new UI for the current SaaS product.',
+    'Worked with Vue.js, along with plugins such as Vuetify Framework and VueFormulate. I helped flesh out existing UI and developed a new UI for the current SaaS product.',
     'The majority of the work consisted of integrating an API with the UI in order to allow users to manage their cloud compliance and their CI/CD pipelines.',   
     'Some of the skills I used in this position included, Docker, Vue2, LESS, SASS, HTML, AWS, Git Lab and Adobe Suite'
     ]
