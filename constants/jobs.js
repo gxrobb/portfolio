@@ -6,7 +6,7 @@ export const jobList = [
     date: 'June 2022 - April 2023',
     description: [
     'Collaborated with UX Designers and Back End developers to deploy, maintain and develop various SaaS applications under the Cofense umbrella. ',
-    'Contributed to the development of internal development tools, reviewed code and provided support and guidance to junior developers.',   
+    'Contributed to the development of internal development tools such as a Design System, reviewed code and provided support and guidance to junior developers.',   
     'Worked with product owners and the development team to help prioritize and plan out the development of new features and bug fixes.',
     'Some of the skills I used in this position included Vue.js, GitLab, and a Vue.js Component Library.'
     ]
