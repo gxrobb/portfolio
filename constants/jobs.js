@@ -18,14 +18,14 @@ export const jobList = [
     date: 'August 2021 - May 2022',
     description: [
     'Worked with Vue.js, along with plugins such as Vuetify Framework and VueFormulate. I helped flesh out existing UI and developed a new UI for the current SaaS product.',
-    'The majority of the work consisted of integrating an API with the UI in order to allow users to manage their cloud compliance and their CI/CD pipelines.',   
+    'The majority of work was API and UI integration allowing users to manage their cloud compliance and their CI/CD pipelines',   
     'Some of the skills I used in this position included, Docker, Vue2, LESS, SASS, HTML, AWS, Git Lab and Adobe Suite'
     ]
   },
   {
     id: 'firewalls.com',
     label: 'Firewalls.com',
-    title: 'Senior Front-End Developer @ Firewalls.com',
+    title: 'Front-End Developer @ Firewalls.com',
     date: 'August 2019 - August 2021',
     description: [
     'I developed on Magento 2, Wordpress and Laravel 8 to maintain an online firewall reseller website. In addition to development, I also assisted the marketing team with the occasional web banner.',
