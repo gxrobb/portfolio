@@ -66,7 +66,7 @@ export default function Home() {
             <p>Oh, Hello there! My name is</p>
             <h1>ROBERT KREGLOH</h1>
             <h3>And I like to build <span className={styles.highlight}>useful</span> things!</h3>
-            <p>I am a <span className={styles.highlight}>Front-End Web Developer</span> who has a passion for graphic and interaction design and a background in visual effects and motion graphics</p>
+            <p>I am a <span className={styles.highlight}>Senior Front-End Web Developer</span> who has a passion for graphic and interaction design and a background in visual effects and motion graphics</p>
             <a href="mailto:gxrobb@gmail.com"><button>Get In Touch</button></a>
           </div>
 
@@ -88,7 +88,7 @@ export default function Home() {
                       <li>TypeScript</li>
                       <li>Vue.js</li>
                       <li>Jest</li>
-                      <li>SASS</li>
+                      <li>SCSS</li>
                     </ul>
                   </div>
                   <div>
@@ -137,7 +137,7 @@ export default function Home() {
             <ProjectCard 
               id="pool-garden"
               imgUrl={'/images/poolgarden.png'}
-              stackList={'Next.js, SASS, Design'}
+              stackList={'Next.js, SCSS, Design'}
               logoCopy={'Pool.Garden'}
               projectLink={'/images/pgfull.png'}
               shortDescription={'Chia Cryptocurrency Mining Pool.'}
@@ -153,7 +153,7 @@ export default function Home() {
             <ProjectCard
               id={'firewalls-blog'}
               imgUrl={'/images/fwcblog.png'}
-              stackList={'Wordpress, SASS, PHP, Design'}
+              stackList={'Wordpress, SCSS, PHP, Design'}
               logoCopy={'Firewalls.com Blog'}
               projectLink={'https://www.firewalls.com/blog'}
               shortDescription={'Firewalls Blog.'}
@@ -161,14 +161,14 @@ export default function Home() {
             <ProjectCard
               id={'rpg-ipsum'}
               imgUrl={'/images/rpgipsum.jpg'}
-              stackList={'JavaScript'}
+              stackList={'JavaScript, React, SCSS'}
               logoCopy={'RPG Ipsum'}
               projectLink={'/rpgIpsum'}
               shortDescription={'Lorem Ipsum Generator.'}
             />
             {/* <ProjectCard
               imgUrl={'/images/p1v3.jpg'}
-              stackList={'Wordpress, PHP, SASS, Design, JS'}
+              stackList={'Wordpress, PHP, SCSS, Design, JS'}
               logoCopy={'Player One Esports'}
               projectLink={'https://www.playeroneesports.com'}
               shortDescription={'Esports Gaming Website.'}
