@@ -66,7 +66,7 @@ export default function Home() {
             <p>Oh, Hello there! My name is</p>
             <h1>ROBERT KREGLOH</h1>
             <h3>And I like to build <span className={styles.highlight}>useful</span> things!</h3>
-            <p>I am a <span className={styles.highlight}>Senior Front-End Web Developer</span> who has a passion for graphic and interaction design and a background in visual effects and motion graphics</p>
+            <p>I am a <span className={styles.highlight}>Senior Front-End Web Developer</span> who has a passion for graphic and interaction design.</p>
             <a href="mailto:gxrobb@gmail.com"><button>Get In Touch</button></a>
           </div>
 
@@ -96,6 +96,7 @@ export default function Home() {
                       <li>Docker</li>
                       <li>JavaScript</li>
                       <li>VS Code</li>
+                      <li>Design Systems</li>
                     </ul>
                   </div>
                 </div>
