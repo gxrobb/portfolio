@@ -2,7 +2,7 @@ export const jobList = [
   {
     id: 'cofense',
     label: 'Cofense',
-    title: 'Front-End Developer @ Cofense',
+    title: 'Software Engineer III (Senior UI Developer) @ Cofense',
     date: 'June 2022 - April 2023',
     description: [
     'Collaborated with UX Designers and Back End developers to deploy, maintain and develop various SaaS applications under the Cofense umbrella. ',

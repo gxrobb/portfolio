@@ -98,6 +98,7 @@ export default function Home() {
                       <li>JavaScript</li>
                       <li>VS Code</li>
                       <li>Design Systems</li>
+                      <li>Git Lab</li>
                     </ul>
                   </div>
                 </div>
