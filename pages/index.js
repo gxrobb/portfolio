@@ -89,6 +89,7 @@ export default function Home() {
                       <li>Vue.js</li>
                       <li>Jest</li>
                       <li>SCSS</li>
+                      <li>Storybook.js</li>
                     </ul>
                   </div>
                   <div>
