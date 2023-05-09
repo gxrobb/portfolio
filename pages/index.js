@@ -42,6 +42,11 @@ export default function Home() {
             </a>
           </li>
           <li>
+            <a href="https://dribbble.com/gxrobb" target="_blank" rel="noreferrer">
+              <i className="fab fa-dribbble"></i>
+            </a>
+          </li>
+          <li>
             <a href="mailto:gxrobb@gmail.com">
               <i className="fas fa-envelope"></i>
             </a>
