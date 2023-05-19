@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
 import profilePic from '../public/images/me.jpg'
-import ProjectCard from '../components/ProjectCard.js'
 import EmployerDescription from '../components/EmployerDescription.js'
 import { jobList } from '../constants/jobs.js'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Image from 'next/image'
+import { faLinkedinIn, faGithub, faDribbble } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 export default function Home() { 
 
   const [activeEmployer, setActiveEmployer] = useState(jobList[0]);
@@ -33,22 +34,22 @@ export default function Home() {
           <li><div className={styles.line}></div></li>
           <li>
             <a href="https://www.linkedin.com/in/rkregloh/" target="_blank" rel="noreferrer">
-              <i className="fab fa-linkedin-in"></i>
+              <FontAwesomeIcon icon={faLinkedinIn} />
             </a>
           </li>
           <li>
             <a href="https://github.com/gxrobb" target="_blank" rel="noreferrer">
-              <i className="fab fa-github"></i>
+              <FontAwesomeIcon icon={faGithub} />
             </a>
           </li>
           <li>
             <a href="https://dribbble.com/gxrobb" target="_blank" rel="noreferrer">
-              <i className="fab fa-dribbble"></i>
+              <FontAwesomeIcon icon={faDribbble} />
             </a>
           </li>
           <li>
             <a href="mailto:gxrobb@gmail.com">
-              <i className="fas fa-envelope"></i>
+              <FontAwesomeIcon icon={faEnvelope} />
             </a>
           </li>
         </ul>
@@ -57,7 +58,6 @@ export default function Home() {
         <ul>
           <li><a href="#about">About Me</a></li>
           <li><a href="#experience">Experience</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="/resume.pdf">Resume</a></li>
           <li><a href="#contact">Contact</a></li>
           <li><div className={styles.line}></div></li>
@@ -85,16 +85,17 @@ export default function Home() {
             <div className={styles.copyGrid}>
               <div className={styles.item}>
                 <p>I am a Front-End Developer based in Indiana. I started developing for the web professionally in 2015 and have not stopped creating beautiful, useful and intuitive websites since! I heard a term once in a podcast that I feel describes my passion, a “User Defender”. Usability is always at the forefront of anything I design or build. I love creating great designs that just plain work!</p>
-                <p>Some of my hobbies include spending time with my wife and daughter, tinkering with new technology, video games, painting miniature figures and I love a good craft beer while playing Dungeons and Dragons with my friends!</p>
+                <p>Some of my hobbies include spending time with my family, tinkering with new technology, video games, painting miniature figures and I love a good craft beer while playing Dungeons and Dragons with my friends!</p>
                 <p>Below are some of the technologies I have been working with most recently.</p>
                 <div className={styles.ulGrid}>
                   <div>
                     <ul>
                       <li>TypeScript</li>
                       <li>Vue.js</li>
+                      <li>React</li>
+                      <li>Next.js</li>
                       <li>Jest</li>
                       <li>SCSS</li>
-                      <li>Storybook.js</li>
                     </ul>
                   </div>
                   <div>
@@ -104,6 +105,7 @@ export default function Home() {
                       <li>VS Code</li>
                       <li>Design Systems</li>
                       <li>Git Lab</li>
+                      <li>Storybook.js</li>
                     </ul>
                   </div>
                 </div>
@@ -132,55 +134,6 @@ export default function Home() {
             
               <EmployerDescription jobObject={activeEmployer}/>
             </div>
-          </div>
-        </section>
-
-        <div id="portfolio" />
-        <section className={`${styles.copySection} ${styles.projects} container`}>
-          <div className={styles.title}>
-            <h2>Some projects</h2>
-            <p><strong>Note:</strong> My last 2 positions involved private apps and I am not able to share any visuals but would love to elaborate in a conversation!</p>
-          </div>
-          <div className={styles.projectsWrapper}>
-            <ProjectCard 
-              id="pool-garden"
-              imgUrl={'/images/poolgarden.png'}
-              stackList={'Next.js, SCSS, Design'}
-              logoCopy={'Pool.Garden'}
-              projectLink={'/images/pgfull.png'}
-              shortDescription={'Chia Cryptocurrency Mining Pool.'}
-            />
-            <ProjectCard 
-              id={'firewalls.com'}
-              imgUrl={'/images/firewalls.png'} 
-              stackList={'Magento 2, LESS, Docker, PHP, JS'}
-              logoCopy={'Firewalls.com'}
-              projectLink={'https://www.firewalls.com'}
-              shortDescription={'Firewalls Reseller Website.'}
-            />
-            <ProjectCard
-              id={'firewalls-blog'}
-              imgUrl={'/images/fwcblog.png'}
-              stackList={'Wordpress, SCSS, PHP, Design'}
-              logoCopy={'Firewalls.com Blog'}
-              projectLink={'https://www.firewalls.com/blog'}
-              shortDescription={'Firewalls Blog.'}
-            />
-            <ProjectCard
-              id={'rpg-ipsum'}
-              imgUrl={'/images/rpgipsum.jpg'}
-              stackList={'JavaScript, React, SCSS'}
-              logoCopy={'RPG Ipsum'}
-              projectLink={'/rpgIpsum'}
-              shortDescription={'Lorem Ipsum Generator.'}
-            />
-            {/* <ProjectCard
-              imgUrl={'/images/p1v3.jpg'}
-              stackList={'Wordpress, PHP, SCSS, Design, JS'}
-              logoCopy={'Player One Esports'}
-              projectLink={'https://www.playeroneesports.com'}
-              shortDescription={'Esports Gaming Website.'}
-            /> */}
           </div>
         </section>
 
