@@ -113,7 +113,7 @@ export default function Home() {
               </div>
               <div className={styles.item}>
                 <div className={styles.profilePicWrapper}>
-                  <Image src={profilePic} alt="Picture of me, Robert Kregloh" />
+                  <Image src={profilePic} alt="Picture of me, Robert Kregloh" layout="responsive" />
                 </div>
               </div>
             </div>
