@@ -135,54 +135,6 @@ export default function Home() {
           </div>
         </section>
 
-        <div id="portfolio" />
-        <section className={`${styles.copySection} ${styles.projects} container`}>
-          <div className={styles.title}>
-            <h2>Some projects</h2>
-            <p><strong>Note:</strong> My last 2 positions involved private apps and I am not able to share any visuals but would love to elaborate in a conversation!</p>
-          </div>
-          <div className={styles.projectsWrapper}>
-            <ProjectCard 
-              id="pool-garden"
-              imgUrl={'/images/poolgarden.png'}
-              stackList={'Next.js, SCSS, Design'}
-              logoCopy={'Pool.Garden'}
-              projectLink={'/images/pgfull.png'}
-              shortDescription={'Chia Cryptocurrency Mining Pool.'}
-            />
-            <ProjectCard 
-              id={'firewalls.com'}
-              imgUrl={'/images/firewalls.png'} 
-              stackList={'Magento 2, LESS, Docker, PHP, JS'}
-              logoCopy={'Firewalls.com'}
-              projectLink={'https://www.firewalls.com'}
-              shortDescription={'Firewalls Reseller Website.'}
-            />
-            <ProjectCard
-              id={'firewalls-blog'}
-              imgUrl={'/images/fwcblog.png'}
-              stackList={'Wordpress, SCSS, PHP, Design'}
-              logoCopy={'Firewalls.com Blog'}
-              projectLink={'https://www.firewalls.com/blog'}
-              shortDescription={'Firewalls Blog.'}
-            />
-            <ProjectCard
-              id={'rpg-ipsum'}
-              imgUrl={'/images/rpgipsum.jpg'}
-              stackList={'JavaScript, React, SCSS'}
-              logoCopy={'RPG Ipsum'}
-              projectLink={'/rpgIpsum'}
-              shortDescription={'Lorem Ipsum Generator.'}
-            />
-            {/* <ProjectCard
-              imgUrl={'/images/p1v3.jpg'}
-              stackList={'Wordpress, PHP, SCSS, Design, JS'}
-              logoCopy={'Player One Esports'}
-              projectLink={'https://www.playeroneesports.com'}
-              shortDescription={'Esports Gaming Website.'}
-            /> */}
-          </div>
-        </section>
 
         <div id="contact" />
         <section className={`${styles.copySection} ${styles.contact} container`}>
