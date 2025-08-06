@@ -5,6 +5,7 @@ import profilePic from '../public/images/me.jpg'
 import EmployerDescription from '../components/EmployerDescription.js'
 import { jobList } from '../constants/jobs.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { SkillsGrid } from '../components/SkillsGrid.js'
 import Image from 'next/image'
 import { faLinkedinIn, faGithub, faDribbble } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
@@ -21,6 +22,8 @@ export default function Home() {
         </>
       )
     }
+
+    
     
   return (
     <>
@@ -87,28 +90,7 @@ export default function Home() {
                 <p>I am a Front-End Developer based in Indiana. I started developing for the web professionally in 2015 and have not stopped creating beautiful, useful and intuitive websites since! I heard a term once in a podcast that I feel describes my passion, a “User Defender”. Usability is always at the forefront of anything I design or build. I love creating great designs that just plain work!</p>
                 <p>Some of my hobbies include spending time with my family, tinkering with new technology, video games, painting miniature figures and I love a good craft beer while playing Dungeons and Dragons with my friends!</p>
                 <p>Below are some of the technologies I have been working with most recently.</p>
-                <div className={styles.ulGrid}>
-                  <div>
-                    <ul>
-                      <li>TypeScript</li>
-                      <li>Vue.js</li>
-                      <li>React</li>
-                      <li>Next.js</li>
-                      <li>Jest</li>
-                      <li>SCSS</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <ul>
-                      <li>Docker</li>
-                      <li>JavaScript</li>
-                      <li>VS Code</li>
-                      <li>Design Systems</li>
-                      <li>Git Lab</li>
-                      <li>Storybook.js</li>
-                    </ul>
-                  </div>
-                </div>
+                <SkillsGrid />
               
               </div>
               <div className={styles.item}>
