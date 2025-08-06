@@ -1,5 +1,5 @@
-export const jobList = [
-    {
+export const LIST_OF_EMPLOYERS = [
+  {
     id: 'indico',
     label: 'Indico Data',
     title: 'Senior Software Engineer @ IndicoData.AI',

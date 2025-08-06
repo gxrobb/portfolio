@@ -1,6 +1,7 @@
 import React from 'react';
 
 export default function EmployerDescription({ employer }) {
+  
   return (
     <>
       <h3>{employer.title}</h3>
