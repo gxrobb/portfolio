@@ -1,4 +1,16 @@
 export const jobList = [
+    {
+    id: 'indico',
+    label: 'Indico Data',
+    title: 'Senior Software Engineer @ IndicoData.AI',
+    date: 'July 2023 - August 2025',
+    description: [
+    'Developed and maintained React/TypeScript applications with a focus on scalability, performance, and GraphQL integration.',
+    'Created and maintained a comprehensive design system and component library, enabling consistency and faster development across teams.',
+    'Established best practices for unit and integration testing, as well as design system standards to streamline collaboration between designers and engineers.',
+    'Led the architecture and implementation of two new UI applications from the ground up.',
+    ]
+  },
   {
     id: 'cofense',
     label: 'Cofense',
@@ -66,15 +78,4 @@ export const jobList = [
     'Some of the skills I use in this position include PHP, CSS, LESS, Twitter Bootstrap, jQuery, JavaScript.'
     ]
   },
-  {
-    id: 'jcmarketing',
-    label: 'JCMarketing',
-    title: 'Graphic Designer @ JCMarketing',
-    date: 'July 2014 - August 2016',
-    description: [
-    'At JCMarketing, I created web banners, small websites and social media graphics.',
-    'The majority of the work for this client was graphic design related with some html/css fixes peppered in.',   
-    'Some of the skills I use in this position include Design, Photoshop, Illustrator, Indesign, HTML, CSS, jQuery, JavaScript'
-    ]
-  }
 ]
