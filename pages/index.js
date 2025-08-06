@@ -6,6 +6,7 @@ import { LIST_OF_EMPLOYERS } from '../constants/jobs.js';
 import { AboutSection } from '../components/AboutSection.js';
 import SideIcons from '../components/SideIcons.js';
 import Navigation from '../components/Navigation.js';
+import ContactSection from '../components/ContactSection.js';
 
 export default function Home() {
   const [activeEmployer, setActiveEmployer] = useState(LIST_OF_EMPLOYERS[0]);
@@ -49,24 +50,7 @@ export default function Home() {
           setActiveEmployer={setActiveEmployer}
         />
 
-        <div id="contact" />
-        <section
-          className={`${styles.copySection} ${styles.contact} container`}
-        >
-          <div className={styles.title}>
-            <h2>Contact</h2>
-          </div>
-          <div className={styles.contactWrapper}>
-            <p>
-              If you have any questions, or just want to say hi, feel free to
-              shoot me an email! Click the button below to launch your preferred
-              email client!
-            </p>
-            <a href="mailto:gxrobb@gmail.com">
-              <button>Email Me</button>
-            </a>
-          </div>
-        </section>
+        <ContactSection />
       </main>
       <footer className={styles.footer}>
         <p>Designed And Developed By Robert Kregloh | Deployed On Netlify!</p>
