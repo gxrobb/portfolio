@@ -1,5 +1,14 @@
 {
   "extends": ["next", "next/core-web-vitals"],
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "requireConfigFile": false,
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
   "rules": {
     "react-hooks/rules-of-hooks": "off",
     "react/no-unescaped-entities": "off",
