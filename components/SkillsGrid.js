@@ -4,10 +4,10 @@ import styles from '../styles/Home.module.scss'
  export function SkillsGrid() {
     return (
       <div className={styles.ulGrid}>
-        {skillsList.map((skillGroup) => (
-          <div key={skillGroup.id}>
+        {skillsList.map((skillColumn) => (
+          <div key={skillColumn.id}>
             <ul>
-              {skillGroup.skills.map((skill, index) => (
+              {skillColumn.skills.map((skill, index) => (
                 <li key={index}>{skill}</li>
               ))}
             </ul>
