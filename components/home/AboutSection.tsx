@@ -24,8 +24,8 @@ export function AboutSection() {
             friends!
           </p>
           <p>
-            Below are some of the technologies I have been working with most
-            recently.
+            Below are some of the technologies and practices I have been working
+            with most recently.
           </p>
           <SkillsGrid />
         </div>
