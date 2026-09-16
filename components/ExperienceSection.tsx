@@ -1,11 +1,17 @@
 import styles from '../styles/Home.module.scss';
-import EmployerDescription from './EmployerDescription.js';
-import { EmployerList } from './EmployerList.js';
-import { LIST_OF_EMPLOYERS } from '../constants/jobs.js';
+import EmployerDescription from './EmployerDescription';
+import { EmployerList } from './EmployerList';
+import { LIST_OF_EMPLOYERS, type Employer } from '../constants/jobs';
+
+interface ExperienceSectionProps {
+  activeEmployer: Employer;
+  setActiveEmployer: (employer: Employer) => void;
+}
+
 export default function ExperienceSection({
   activeEmployer,
   setActiveEmployer,
-}) {
+}: ExperienceSectionProps) {
   return (
     <>
       <div id="experience" />

@@ -1,4 +1,9 @@
-export const skillsList = [
+export interface SkillColumn {
+  id: number;
+  skills: string[];
+}
+
+export const skillsList: SkillColumn[] = [
   {
     id: 1,
     skills: [

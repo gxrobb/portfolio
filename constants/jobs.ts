@@ -1,4 +1,12 @@
-export const LIST_OF_EMPLOYERS = [
+export interface Employer {
+  id: string;
+  label: string;
+  title: string;
+  date: string;
+  description: string[];
+}
+
+export const LIST_OF_EMPLOYERS: Employer[] = [
   {
     id: 'indico',
     label: 'Indico Data',

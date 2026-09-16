@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 const WORDS = [
     'rpg',
         'hero',
@@ -71,17 +71,17 @@ const WORDS = [
         'spirit'
 ]
 
-function SelectRandomNumber(array){
-    return Math.floor(Math.random() * (1, array.length -1));
+function SelectRandomNumber(array: string[]): number {
+    return Math.floor(Math.random() * array.length);
 }
 
-function GetRandomWord(wordArray){
+function GetRandomWord(wordArray: string[]): string {
     return wordArray[SelectRandomNumber(wordArray)];
 }
-function capitalizeFirstLetter(string) {
+function capitalizeFirstLetter(string: string): string {
     return string.charAt(0).toUpperCase() + string.slice(1);
   }
-function CreateASentence(WORDS, numOfWords){
+function CreateASentence(WORDS: string[], numOfWords: number): string {
     let tempSentence = '';
     let lengthCounter = 0;
     while(lengthCounter < numOfWords){
@@ -94,18 +94,18 @@ function CreateASentence(WORDS, numOfWords){
     tempSentence = capitalizeFirstLetter(tempSentence);
     return tempSentence.trim() + '. ';
  }
- function CreateParagraph(paragraphSize) {
-	let paragraph = []
+ function CreateParagraph(paragraphSize: number): string {
+	const paragraph: string[] = []
 	for(let x = 0; x < paragraphSize; x++) {
 		paragraph.push(CreateASentence(WORDS, 5))
 	}
     return paragraph.join('')
 }
 
-function GenerateTheOutput(numberOfParagraphs, size){
+function GenerateTheOutput(numberOfParagraphs: number, size: number): string[] {
 
-    !numberOfParagraphs ? numberOfParagraphs = 1 : numberOfParagraphs;
-    !size ? size = 5 : size;
+    if (!numberOfParagraphs) numberOfParagraphs = 1;
+    if (!size) size = 5;
     
     if(numberOfParagraphs > 10) {
         numberOfParagraphs = 10
@@ -113,7 +113,7 @@ function GenerateTheOutput(numberOfParagraphs, size){
     if( numberOfParagraphs < 1) {
         numberOfParagraphs = 1
     }
-    let theOutput = []
+    const theOutput: string[] = []
     let x = 0
     while(x < numberOfParagraphs) {
         theOutput.push(CreateParagraph(size))
@@ -122,12 +122,12 @@ function GenerateTheOutput(numberOfParagraphs, size){
     return theOutput
 }
 
-export default function Paragraph({ paragraphNumber, sentenceLength }) {
-	const [generatedParagraph, setGeneratedParagraph] = useState([]);
-	// useEffect(()=>{
-	// 	setGeneratedParagraph(GenerateTheOutput(paragraphNumber, 5))
-	// }, []) 
+interface ParagraphProps {
+    paragraphNumber: number
+    sentenceLength: number
+}
 
+export default function Paragraph({ paragraphNumber, sentenceLength }: ParagraphProps) {
   return (
     <>
         {GenerateTheOutput(paragraphNumber, sentenceLength).map(paragraph => {

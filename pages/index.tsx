@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import Head from 'next/head';
 import styles from '../styles/Home.module.scss';
-import ExperienceSection from '../components/ExperienceSection.js';
-import { LIST_OF_EMPLOYERS } from '../constants/jobs.js';
-import { AboutSection } from '../components/AboutSection.js';
-import SideIcons from '../components/SideIcons.js';
-import Navigation from '../components/Navigation.js';
-import ContactSection from '../components/ContactSection.js';
+import ExperienceSection from '../components/ExperienceSection';
+import { LIST_OF_EMPLOYERS } from '../constants/jobs';
+import { AboutSection } from '../components/AboutSection';
+import SideIcons from '../components/SideIcons';
+import Navigation from '../components/Navigation';
+import ContactSection from '../components/ContactSection';
 
 export default function Home() {
   const [activeEmployer, setActiveEmployer] = useState(LIST_OF_EMPLOYERS[0]);

@@ -1,8 +1,19 @@
 import React, { useState } from "react";
-export default function ParagraphInput({ onSubmit }) {
+
+export interface IpsumSettings {
+  paragraphNumber: number;
+  sentenceLength: number;
+  showParagraph: boolean;
+}
+
+export default function ParagraphInput({
+  onSubmit,
+}: {
+  onSubmit: (settings: IpsumSettings) => void;
+}) {
   const [paragraphNumber, setParagraphNumber] = useState(5);
   const [sentenceLength, setSentenceLength] = useState(5);
-  const [showParagraph, setShowParagraph] = useState(true);
+  const [showParagraph] = useState(true);
 
   return (
     <div>
@@ -35,7 +46,7 @@ export default function ParagraphInput({ onSubmit }) {
                   className="para-box"
                   required
                   onInput={(event) =>
-                    setParagraphNumber(parseInt(event.target.value))
+                    setParagraphNumber(parseInt(event.currentTarget.value))
                   }
                 />
                 <small id="para-box-help" className="form-text text-muted">
@@ -50,7 +61,7 @@ export default function ParagraphInput({ onSubmit }) {
                   name="sentences"
                   value="3"
                   required
-                  checked={sentenceLength === 3 ? "checked" : ""}
+                  checked={sentenceLength === 3}
                   onChange={(event) =>
                     setSentenceLength(parseInt(event.target.value))
                   }
@@ -65,7 +76,7 @@ export default function ParagraphInput({ onSubmit }) {
                   type="radio"
                   name="sentences"
                   value="5"
-                  checked={sentenceLength === 5 ? "checked" : ""}
+                  checked={sentenceLength === 5}
                   required
                   onChange={(event) =>
                     setSentenceLength(parseInt(event.target.value))
@@ -81,7 +92,7 @@ export default function ParagraphInput({ onSubmit }) {
                   type="radio"
                   name="sentences"
                   value="7"
-                  checked={sentenceLength === 7 ? "checked" : ""}
+                  checked={sentenceLength === 7}
                   required
                   onChange={(event) =>
                     setSentenceLength(parseInt(event.target.value))
