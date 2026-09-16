@@ -7,6 +7,12 @@ import { AboutSection } from '../components/AboutSection';
 import SideIcons from '../components/SideIcons';
 import Navigation from '../components/Navigation';
 import ContactSection from '../components/ContactSection';
+import {
+  SHARE_IMAGE,
+  SITE_DESCRIPTION,
+  SITE_TITLE,
+  SITE_URL,
+} from '../constants/site';
 
 export default function Home() {
   const [activeEmployer, setActiveEmployer] = useState(LIST_OF_EMPLOYERS[0]);
@@ -14,9 +20,20 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Robert Kregloh&apos;s Portfolio</title>
-        <meta name="description" content="Welcome to my portfolio!" />
+        <title>{SITE_TITLE}</title>
+        <meta name="description" content={SITE_DESCRIPTION} />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="canonical" href={`${SITE_URL}/`} />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content={SITE_TITLE} />
+        <meta property="og:title" content={SITE_TITLE} />
+        <meta property="og:description" content={SITE_DESCRIPTION} />
+        <meta property="og:url" content={`${SITE_URL}/`} />
+        <meta property="og:image" content={SHARE_IMAGE.url} />
+        <meta property="og:image:width" content={String(SHARE_IMAGE.width)} />
+        <meta property="og:image:height" content={String(SHARE_IMAGE.height)} />
+        <meta property="og:image:alt" content={SHARE_IMAGE.alt} />
+        <meta name="twitter:card" content="summary" />
       </Head>
       <SideIcons />
       <Navigation />
@@ -37,8 +54,8 @@ export default function Home() {
               </span>{' '}
               who has a passion for graphic and interaction design.
             </p>
-            <a href="mailto:gxrobb@gmail.com">
-              <button>Get In Touch</button>
+            <a className="button" href="mailto:gxrobb@gmail.com">
+              Get In Touch
             </a>
           </div>
         </section>

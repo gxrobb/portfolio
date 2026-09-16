@@ -6,7 +6,8 @@ body {
   margin: 0;
   background-color: $darkColor;
   color: $fontColor;
-  font-family: 'Open Sans', sans-serif;
+  // --font-open-sans is defined by next/font in pages/_app.tsx
+  font-family: var(--font-open-sans), sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -27,7 +28,8 @@ a {
   margin: 0 auto;
 }
 
-button {
+button,
+.button {
   margin: 0;
   background-color: $primaryColor;
   color: $darkColor;
@@ -39,6 +41,19 @@ button {
   cursor: pointer;
   &:hover {
     background-color: color.adjust($primaryColor, $lightness: -20%);
+  }
+}
+
+// Links styled as buttons. Matches the browser's default <button> text
+// (13.33px Arial) so they look the same as the old <a><button> markup.
+.button {
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  font-size: 13.3333px;
+  line-height: normal;
+  text-align: center;
+  &:hover {
+    color: $darkColor;
   }
 }
 

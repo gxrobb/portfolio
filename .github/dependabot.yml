@@ -1,0 +1,25 @@
+version: 2
+updates:
+  - package-ecosystem: bun
+    directory: /
+    schedule:
+      interval: monthly
+    groups:
+      # Minor and patch bumps land together in one monthly PR. Major
+      # versions still open individual PRs so breaking changes are isolated.
+      minor-and-patch:
+        applies-to: version-updates
+        patterns:
+          - '*'
+        update-types:
+          - minor
+          - patch
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    groups:
+      github-actions:
+        patterns:
+          - '*'
