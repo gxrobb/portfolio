@@ -1,40 +1,20 @@
 import { useState } from 'react';
-import Head from 'next/head';
 import styles from '../styles/Home.module.scss';
+import PageHead from '../components/PageHead';
 import ExperienceSection from '../components/ExperienceSection';
 import { LIST_OF_EMPLOYERS } from '../constants/jobs';
 import { AboutSection } from '../components/AboutSection';
 import SideIcons from '../components/SideIcons';
 import Navigation from '../components/Navigation';
 import ContactSection from '../components/ContactSection';
-import {
-  SHARE_IMAGE,
-  SITE_DESCRIPTION,
-  SITE_TITLE,
-  SITE_URL,
-} from '../constants/site';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../constants/site';
 
 export default function Home() {
   const [activeEmployer, setActiveEmployer] = useState(LIST_OF_EMPLOYERS[0]);
 
   return (
     <>
-      <Head>
-        <title>{SITE_TITLE}</title>
-        <meta name="description" content={SITE_DESCRIPTION} />
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="canonical" href={`${SITE_URL}/`} />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content={SITE_TITLE} />
-        <meta property="og:title" content={SITE_TITLE} />
-        <meta property="og:description" content={SITE_DESCRIPTION} />
-        <meta property="og:url" content={`${SITE_URL}/`} />
-        <meta property="og:image" content={SHARE_IMAGE.url} />
-        <meta property="og:image:width" content={String(SHARE_IMAGE.width)} />
-        <meta property="og:image:height" content={String(SHARE_IMAGE.height)} />
-        <meta property="og:image:alt" content={SHARE_IMAGE.alt} />
-        <meta name="twitter:card" content="summary" />
-      </Head>
+      <PageHead title={SITE_TITLE} description={SITE_DESCRIPTION} path="/" />
       <SideIcons />
       <Navigation />
 
