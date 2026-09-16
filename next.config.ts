@@ -7,7 +7,6 @@ const nextConfig: NextConfig = {
   // because Bun can't resolve the hashed external symlinks Turbopack creates
   // mid-session.
   transpilePackages: [
-    '@fortawesome/fontawesome-free',
     '@fortawesome/fontawesome-svg-core',
     '@fortawesome/free-brands-svg-icons',
     '@fortawesome/free-solid-svg-icons',
