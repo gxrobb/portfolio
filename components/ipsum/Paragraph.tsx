@@ -72,7 +72,7 @@ const WORDS = [
 ]
 
 function SelectRandomNumber(array: string[]): number {
-    return Math.floor(Math.random() * (array.length -1));
+    return Math.floor(Math.random() * array.length);
 }
 
 function GetRandomWord(wordArray: string[]): string {
