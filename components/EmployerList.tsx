@@ -1,24 +1,30 @@
-import styles from '../styles/Home.module.scss'
-import type { Employer } from '../constants/jobs'
+import styles from '../styles/Home.module.scss';
+import type { Employer } from '../constants/jobs';
 
 interface EmployerListProps {
-  employers: Employer[]
-  activeEmployer: Employer
-  onEmployerSelect: (employer: Employer) => void
+  employers: Employer[];
+  activeEmployer: Employer;
+  onEmployerSelect: (employer: Employer) => void;
 }
 
-export function EmployerList({ employers, activeEmployer, onEmployerSelect }: EmployerListProps) {
+export function EmployerList({
+  employers,
+  activeEmployer,
+  onEmployerSelect,
+}: EmployerListProps) {
   return (
     <>
-      {employers.map((employer) => (
-        <li 
-          onClick={() => onEmployerSelect(employer)}  
-          className={activeEmployer.id === employer.id ? styles.active : undefined} 
+      {employers.map(employer => (
+        <li
+          onClick={() => onEmployerSelect(employer)}
+          className={
+            activeEmployer.id === employer.id ? styles.active : undefined
+          }
           key={employer.id}
-        > 
-          {employer.label} 
+        >
+          {employer.label}
         </li>
       ))}
     </>
-  )
+  );
 }

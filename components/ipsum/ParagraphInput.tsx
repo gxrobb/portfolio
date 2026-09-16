@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 export interface IpsumSettings {
   paragraphNumber: number;
@@ -45,7 +45,7 @@ export default function ParagraphInput({
                   value={paragraphNumber}
                   className="para-box"
                   required
-                  onInput={(event) =>
+                  onInput={event =>
                     setParagraphNumber(parseInt(event.currentTarget.value))
                   }
                 />
@@ -62,7 +62,7 @@ export default function ParagraphInput({
                   value="3"
                   required
                   checked={sentenceLength === 3}
-                  onChange={(event) =>
+                  onChange={event =>
                     setSentenceLength(parseInt(event.target.value))
                   }
                 />
@@ -78,7 +78,7 @@ export default function ParagraphInput({
                   value="5"
                   checked={sentenceLength === 5}
                   required
-                  onChange={(event) =>
+                  onChange={event =>
                     setSentenceLength(parseInt(event.target.value))
                   }
                 />
@@ -94,7 +94,7 @@ export default function ParagraphInput({
                   value="7"
                   checked={sentenceLength === 7}
                   required
-                  onChange={(event) =>
+                  onChange={event =>
                     setSentenceLength(parseInt(event.target.value))
                   }
                 />
