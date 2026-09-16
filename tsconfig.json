@@ -23,5 +23,9 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts"
   ],
-  "exclude": ["node_modules"]
+  // Next keeps .next/dev/types in "include", but in a Pages Router app the dev
+  // and build validator.ts files both declare the same global types. Next's
+  // CLI type check (the default) doesn't filter them, so `build` and
+  // `typecheck` fail with duplicate identifiers after running `dev`.
+  "exclude": ["node_modules", ".next/dev/types"]
 }
