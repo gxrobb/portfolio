@@ -4,6 +4,12 @@ updates:
     directory: /
     schedule:
       interval: monthly
+    ignore:
+      # @types/node should match the Node major in .node-version (24). Bump
+      # both together when upgrading Node instead of taking type-only majors.
+      - dependency-name: '@types/node'
+        update-types:
+          - version-update:semver-major
     groups:
       # Minor and patch bumps land together in one monthly PR. Major
       # versions still open individual PRs so breaking changes are isolated.
