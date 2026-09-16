@@ -1,0 +1,44 @@
+@use '../../styles/variables' as *;
+
+.socialIcons {
+  position: fixed;
+  left: 20px;
+  ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    li {
+      margin-bottom: 0.5rem;
+      .line {
+        height: 150px;
+        width: 1px;
+        background-color: $fontColor;
+        margin: 0 auto;
+      }
+      svg {
+        width: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoint-lg) {
+  .socialIcons {
+    position: relative;
+    left: unset;
+    ul {
+      text-align: center;
+      margin-top: 1rem;
+      li {
+        display: inline;
+        margin-right: 1rem;
+        &:first-child {
+          display: none;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

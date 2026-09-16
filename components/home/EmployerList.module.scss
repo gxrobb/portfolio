@@ -1,0 +1,67 @@
+@use '../../styles/variables' as *;
+
+.list {
+  list-style: none;
+  margin-top: 0;
+  padding-left: 1rem;
+  border-left: solid 3px rgba($fontColor, 0.3);
+  li {
+    margin-bottom: 1rem;
+    cursor: pointer;
+    color: rgba($fontColor, 0.5);
+    &.active {
+      color: rgba($fontColor, 1);
+      &:before {
+        content: '';
+        height: 30px;
+        width: 5px;
+        background-color: $primaryColor;
+        position: absolute;
+        margin-left: -20px;
+        border-radius: 5px;
+        margin-top: -5px;
+      }
+    }
+  }
+}
+
+// Tabs are buttons for keyboard access; strip the global button styles so
+// they keep looking like the plain list text.
+.tab {
+  appearance: none;
+  background: none;
+  border: 0;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  font: inherit;
+  text-align: inherit;
+  cursor: pointer;
+  &:hover {
+    background: none;
+  }
+}
+
+@media screen and (max-width: $breakpoint-sm) {
+  .list {
+    padding-left: 0rem;
+    border-left: none;
+    text-align: center;
+    li {
+      display: inline;
+      margin-left: 0.5rem;
+      font-size: 0.8rem;
+      &.active {
+        padding-bottom: 5px;
+        color: $primaryColor;
+        &:before {
+          display: none;
+        }
+      }
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@use '../variables' as *;
+
+.page {
+  padding: 2rem 1rem 4rem;
+}
+
+.title {
+  margin: 3rem 0 0.5rem;
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.subtitle {
+  margin: 0 0 2.5rem;
+  color: $primaryColor;
+}
+
+@media screen and (max-width: $breakpoint-sm) {
+  .title {
+    margin-top: 2rem;
+    font-size: 1.75rem;
+  }
+}

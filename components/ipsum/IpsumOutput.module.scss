@@ -1,0 +1,27 @@
+@use '../../styles/variables' as *;
+
+.output {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba($fontColor, 0.15);
+
+  p {
+    line-height: 1.7;
+  }
+}
+
+.outputActions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+
+  button {
+    margin-top: 0;
+  }
+}
+
+.copyStatus {
+  color: $primaryColor;
+  font-size: 0.9rem;
+}

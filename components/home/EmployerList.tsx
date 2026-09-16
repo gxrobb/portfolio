@@ -1,6 +1,6 @@
 import { useRef, type KeyboardEvent } from 'react';
-import styles from '../styles/Home.module.scss';
-import type { Employer } from '../constants/jobs';
+import type { Employer } from '@/constants/jobs';
+import styles from './EmployerList.module.scss';
 
 export const EMPLOYER_PANEL_ID = 'employer-panel';
 
@@ -54,7 +54,7 @@ export function EmployerList({
   }
 
   return (
-    <>
+    <ul role="tablist" aria-label="Employers" className={styles.list}>
       {employers.map((employer, index) => {
         const isActive = activeEmployer.id === employer.id;
         return (
@@ -82,6 +82,6 @@ export function EmployerList({
           </li>
         );
       })}
-    </>
+    </ul>
   );
 }

@@ -1,9 +1,9 @@
-import { skillsList } from '../constants/skills';
-import styles from '../styles/Home.module.scss';
+import { skillsList } from '@/constants/skills';
+import styles from './SkillsGrid.module.scss';
 
 export function SkillsGrid() {
   return (
-    <div className={styles.ulGrid}>
+    <div className={styles.grid}>
       {skillsList.map(skillColumn => (
         <div key={skillColumn.id}>
           <ul>

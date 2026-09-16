@@ -1,0 +1,15 @@
+// Green square bullet in front of a list item.
+@mixin bullet-list-item {
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    background-image: url(/images/bulletPoint.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 0.5em;
+    position: relative;
+    top: -2px;
+  }
+}

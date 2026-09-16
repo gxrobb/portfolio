@@ -1,0 +1,45 @@
+@use '../../styles/variables' as *;
+
+.navigation {
+  color: $fontColor;
+  padding-top: 1rem;
+  ul {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+
+    li {
+      display: inline;
+      margin-right: 1rem;
+      &:last-child {
+        margin-right: 0;
+      }
+      .line {
+        height: 1px;
+        width: 100px;
+        position: relative;
+        top: -5px;
+        background-color: $fontColor;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoint-lg) {
+  .navigation {
+    text-align: center;
+    ul {
+      text-align: center;
+      li {
+        font-size: 0.8rem;
+        &:last-child {
+          display: none;
+        }
+        &:nth-last-child(2) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
