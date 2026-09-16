@@ -1,19 +1,4 @@
-@use './variables' as *;
-
-.page {
-  padding: 2rem 1rem 4rem;
-}
-
-.title {
-  margin: 3rem 0 0.5rem;
-  font-size: 2.5rem;
-  line-height: 1.2;
-}
-
-.subtitle {
-  margin: 0 0 2.5rem;
-  color: $primaryColor;
-}
+@use '../../styles/variables' as *;
 
 .form {
   display: grid;
@@ -69,38 +54,5 @@
   input {
     margin: 0;
     accent-color: $primaryColor;
-  }
-}
-
-.output {
-  margin-top: 3rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid rgba($fontColor, 0.15);
-
-  p {
-    line-height: 1.7;
-  }
-}
-
-.outputActions {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 1rem;
-
-  button {
-    margin-top: 0;
-  }
-}
-
-.copyStatus {
-  color: $primaryColor;
-  font-size: 0.9rem;
-}
-
-@media screen and (max-width: 620px) {
-  .title {
-    margin-top: 2rem;
-    font-size: 1.75rem;
   }
 }

@@ -1,0 +1,23 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.grid {
+  display: grid;
+  grid-template-columns: 3fr 6fr;
+  ul {
+    list-style: none;
+    margin-top: 0;
+    padding-left: 0em;
+  }
+  li {
+    @include bullet-list-item;
+  }
+}
+
+@media screen and (max-width: $breakpoint-sm) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+  }
+}

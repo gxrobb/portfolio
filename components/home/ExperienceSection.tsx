@@ -1,4 +1,4 @@
-import styles from '@/styles/Home.module.scss';
+import Section from '@/components/common/Section';
 import EmployerDescription from './EmployerDescription';
 import {
   EMPLOYER_PANEL_ID,
@@ -6,6 +6,7 @@ import {
   getEmployerTabId,
 } from './EmployerList';
 import { LIST_OF_EMPLOYERS, type Employer } from '@/constants/jobs';
+import styles from './ExperienceSection.module.scss';
 
 interface ExperienceSectionProps {
   activeEmployer: Employer;
@@ -17,35 +18,24 @@ export default function ExperienceSection({
   setActiveEmployer,
 }: ExperienceSectionProps) {
   return (
-    <>
-      <div id="experience" />
-      <section
-        className={`${styles.copySection} ${styles.experience} container`}
-      >
-        <div className={styles.title}>
-          <h2>Places I&apos;ve Worked</h2>
+    <Section id="experience" title="Places I've Worked">
+      <div className={styles.grid}>
+        <div>
+          <EmployerList
+            employers={LIST_OF_EMPLOYERS}
+            activeEmployer={activeEmployer}
+            onEmployerSelect={setActiveEmployer}
+          />
         </div>
-        <div className={styles.experienceGrid}>
-          <div className={styles.employer}>
-            <ul role="tablist" aria-label="Employers">
-              <EmployerList
-                employers={LIST_OF_EMPLOYERS}
-                activeEmployer={activeEmployer}
-                onEmployerSelect={setActiveEmployer}
-              />
-            </ul>
-          </div>
-          <div
-            className={styles.employerDescription}
-            role="tabpanel"
-            id={EMPLOYER_PANEL_ID}
-            aria-labelledby={getEmployerTabId(activeEmployer)}
-            tabIndex={0}
-          >
-            <EmployerDescription employer={activeEmployer} />
-          </div>
+        <div
+          role="tabpanel"
+          id={EMPLOYER_PANEL_ID}
+          aria-labelledby={getEmployerTabId(activeEmployer)}
+          tabIndex={0}
+        >
+          <EmployerDescription employer={activeEmployer} />
         </div>
-      </section>
-    </>
+      </div>
+    </Section>
   );
 }

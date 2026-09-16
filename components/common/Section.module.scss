@@ -1,0 +1,25 @@
+@use '../../styles/variables' as *;
+
+.section {
+  margin-top: 8rem;
+  h2 {
+    color: $primaryColor;
+    text-transform: uppercase;
+  }
+}
+
+.centeredTitle h2 {
+  text-align: center;
+}
+
+@media screen and (max-width: $breakpoint-md) {
+  .section h2 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: $breakpoint-sm) {
+  .section {
+    margin-top: 3rem;
+  }
+}

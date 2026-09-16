@@ -1,0 +1,29 @@
+@use '../../styles/variables' as *;
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  p {
+    margin-top: 0;
+  }
+}
+
+.photo {
+  img {
+    border-radius: 5px;
+  }
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+.item:first-child {
+  padding-right: 1rem;
+}
+
+@media screen and (max-width: $breakpoint-md) {
+  .grid {
+    max-width: 500px;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+  }
+}

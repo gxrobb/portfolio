@@ -1,4 +1,5 @@
-import styles from '@/styles/Home.module.scss';
+import styles from './Navigation.module.scss';
+
 export default function Navigation() {
   return (
     <nav className={styles.navigation}>

@@ -4,7 +4,7 @@ import {
   SENTENCE_LENGTHS,
   type IpsumSettings,
 } from '@/lib/rpgIpsum';
-import styles from '@/styles/RpgIpsum.module.scss';
+import styles from './IpsumForm.module.scss';
 
 interface IpsumFormProps {
   onGenerate: (settings: IpsumSettings) => void;

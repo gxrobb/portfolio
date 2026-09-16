@@ -4,7 +4,7 @@ import PageHead from '@/components/common/PageHead';
 import IpsumForm from '@/components/ipsum/IpsumForm';
 import IpsumOutput from '@/components/ipsum/IpsumOutput';
 import { generateIpsum, type IpsumSettings } from '@/lib/rpgIpsum';
-import styles from '@/styles/RpgIpsum.module.scss';
+import styles from '@/styles/pages/RpgIpsum.module.scss';
 
 interface GeneratedText {
   // Changes on every generation so IpsumOutput remounts and clears any

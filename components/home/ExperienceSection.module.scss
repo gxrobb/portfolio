@@ -1,0 +1,12 @@
+@use '../../styles/variables' as *;
+
+.grid {
+  display: grid;
+  grid-template-columns: 3fr 10fr;
+}
+
+@media screen and (max-width: $breakpoint-sm) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
