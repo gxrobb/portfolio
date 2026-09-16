@@ -206,14 +206,6 @@
     }
 }
 
-.projects{
-    .projectsWrapper{
-        display:grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 1rem;
-    }
-}
-
 .contact{
     
     .title{
@@ -366,19 +358,4 @@
             }
         }
     }
-    .projects{
-        .projectsWrapper{
-            grid-template-columns: 1fr 1fr;
-        }
-    }
-}
-
-@media screen and (max-width: 400px) {
-
-    .projects{
-        .projectsWrapper{
-            grid-template-columns: 1fr;
-        }
-    }
-
 }
