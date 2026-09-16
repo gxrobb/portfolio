@@ -15,17 +15,23 @@ export default function SideIcons() {
             href="https://www.linkedin.com/in/rkregloh/"
             target="_blank"
             rel="noreferrer"
+            aria-label="LinkedIn"
           >
             <FontAwesomeIcon icon={faLinkedinIn} />
           </a>
         </li>
         <li>
-          <a href="https://github.com/gxrobb" target="_blank" rel="noreferrer">
+          <a
+            href="https://github.com/gxrobb"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="GitHub"
+          >
             <FontAwesomeIcon icon={faGithub} />
           </a>
         </li>
         <li>
-          <a href="mailto:gxrobb@gmail.com">
+          <a href="mailto:gxrobb@gmail.com" aria-label="Email">
             <FontAwesomeIcon icon={faEnvelope} />
           </a>
         </li>

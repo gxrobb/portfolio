@@ -13,11 +13,11 @@ export const LIST_OF_EMPLOYERS: Employer[] = [
     title: 'Senior Software Engineer @ IndicoData.AI',
     date: 'July 2023 - August 2025',
     description: [
-    'Developed and maintained React/TypeScript applications with a focus on scalability, performance, and GraphQL integration.',
-    'Created and maintained a comprehensive design system and component library, enabling consistency and faster development across teams.',
-    'Established best practices for unit and integration testing, as well as design system standards to streamline collaboration between designers and engineers.',
-    'Led the architecture and implementation of two new UI applications from the ground up.',
-    ]
+      'Developed and maintained React/TypeScript applications with a focus on scalability, performance, and GraphQL integration.',
+      'Created and maintained a comprehensive design system and component library, enabling consistency and faster development across teams.',
+      'Established best practices for unit and integration testing, as well as design system standards to streamline collaboration between designers and engineers.',
+      'Led the architecture and implementation of two new UI applications from the ground up.',
+    ],
   },
   {
     id: 'cofense',
@@ -25,11 +25,11 @@ export const LIST_OF_EMPLOYERS: Employer[] = [
     title: 'Software Engineer III (Senior UI Developer) @ Cofense',
     date: 'June 2022 - April 2023',
     description: [
-    'Collaborated with UX Designers and Back End developers to deploy, maintain and develop various SaaS applications under the Cofense umbrella. ',
-    'Contributed to the development of internal development tools such as a Design System, reviewed code and provided support and guidance to junior developers.',   
-    'Worked with product owners and the development team to help prioritize and plan out the development of new features and bug fixes.',
-    'Some of the skills I used in this position included Vue.js, GitLab, and a Vue.js Component Library.'
-    ]
+      'Collaborated with UX Designers and Back End developers to deploy, maintain and develop various SaaS applications under the Cofense umbrella. ',
+      'Contributed to the development of internal development tools such as a Design System, reviewed code and provided support and guidance to junior developers.',
+      'Worked with product owners and the development team to help prioritize and plan out the development of new features and bug fixes.',
+      'Some of the skills I used in this position included Vue.js, GitLab, and a Vue.js Component Library.',
+    ],
   },
   {
     id: 'datica',
@@ -37,10 +37,10 @@ export const LIST_OF_EMPLOYERS: Employer[] = [
     title: 'Front-End Developer @ Datica',
     date: 'August 2021 - May 2022',
     description: [
-    'Worked with Vue.js, along with plugins such as Vuetify Framework and VueFormulate. I helped flesh out existing UI and developed a new UI for the current SaaS product.',
-    'The majority of work was API and UI integration allowing users to manage their cloud compliance and their CI/CD pipelines',   
-    'Some of the skills I used in this position included, Docker, Vue2, LESS, SASS, HTML, AWS, Git Lab and Adobe Suite'
-    ]
+      'Worked with Vue.js, along with plugins such as Vuetify Framework and VueFormulate. I helped flesh out existing UI and developed a new UI for the current SaaS product.',
+      'The majority of work was API and UI integration allowing users to manage their cloud compliance and their CI/CD pipelines',
+      'Some of the skills I used in this position included, Docker, Vue2, LESS, SASS, HTML, AWS, Git Lab and Adobe Suite',
+    ],
   },
   {
     id: 'firewalls.com',
@@ -48,10 +48,10 @@ export const LIST_OF_EMPLOYERS: Employer[] = [
     title: 'Front-End Developer @ Firewalls.com',
     date: 'August 2019 - August 2021',
     description: [
-    'I developed on Magento 2, Wordpress and Laravel 8 to maintain an online firewall reseller website. In addition to development, I also assisted the marketing team with the occasional web banner.',
-    'Responsibilities included managing 3 other developers, deploying code bi-weekly via Bitbucket Pipelines and maintaining the internal API.',   
-    'Some of the skills I used in this position included PHP, Laravel, Magento 2 (Zend Framework), Vue3, LESS, SASS, HTML.'
-    ]
+      'I developed on Magento 2, Wordpress and Laravel 8 to maintain an online firewall reseller website. In addition to development, I also assisted the marketing team with the occasional web banner.',
+      'Responsibilities included managing 3 other developers, deploying code bi-weekly via Bitbucket Pipelines and maintaining the internal API.',
+      'Some of the skills I used in this position included PHP, Laravel, Magento 2 (Zend Framework), Vue3, LESS, SASS, HTML.',
+    ],
   },
   {
     id: 'poolgarden',
@@ -59,10 +59,10 @@ export const LIST_OF_EMPLOYERS: Employer[] = [
     title: 'Front-End Developer @ Pool.Garden',
     date: 'May 2021 - August 2021',
     description: [
-    'I worked with a DevOps/Back-End developer in order to maintain and administer a Chia (XCH) mining pool.',
-    'Responsibilities included maintaining the front end codebase, adding new features and designing any features or elements as they are needed. This project will be going offline shortly.',   
-    'Some of the skills I use in this position include NextJS, SASS, HTML.'
-    ]
+      'I worked with a DevOps/Back-End developer in order to maintain and administer a Chia (XCH) mining pool.',
+      'Responsibilities included maintaining the front end codebase, adding new features and designing any features or elements as they are needed. This project will be going offline shortly.',
+      'Some of the skills I use in this position include NextJS, SASS, HTML.',
+    ],
   },
   {
     id: 'bitloft',
@@ -70,10 +70,10 @@ export const LIST_OF_EMPLOYERS: Employer[] = [
     title: 'Front-End Developer @ BitLoft',
     date: 'August 2016 - August 2019',
     description: [
-    'While at BitLoft, I wore various hats. Working at a startup, I had the pleasure of working on both Front-End and Back-End projects. The majority of my time was spent designing and developing for internal projects as well as agency clients. I also had the chance to expand my skills in some marketing and technology related areas.',
-    'I worked on projects ranging from small wordpress sites to large Laravel SaaS apps. I also assisted the marketing director with planning in-person events at conventions, assisted the esports director on various events and projects ranging from configuring television monitors to display ads and create video trailers for upcoming competitions.',   
-    'Some of the web specific skills I used during my time at BitLoft include Laravel 5, PHP, CSS, SASS, LESS, JavaScript, jQuery, MySQL, Google Cloud Platform, Design and Print Design.'
-    ]
+      'While at BitLoft, I wore various hats. Working at a startup, I had the pleasure of working on both Front-End and Back-End projects. The majority of my time was spent designing and developing for internal projects as well as agency clients. I also had the chance to expand my skills in some marketing and technology related areas.',
+      'I worked on projects ranging from small wordpress sites to large Laravel SaaS apps. I also assisted the marketing director with planning in-person events at conventions, assisted the esports director on various events and projects ranging from configuring television monitors to display ads and create video trailers for upcoming competitions.',
+      'Some of the web specific skills I used during my time at BitLoft include Laravel 5, PHP, CSS, SASS, LESS, JavaScript, jQuery, MySQL, Google Cloud Platform, Design and Print Design.',
+    ],
   },
   {
     id: '4media',
@@ -81,9 +81,9 @@ export const LIST_OF_EMPLOYERS: Employer[] = [
     title: 'Web Designer @ 4 Media',
     date: 'February 2015 - May 2016',
     description: [
-    'While at 4 Media I created over 50 bootstrap websites for various different clients. I also created landing pages which required a bit of JavaScript and marketing magic.',
-    'My responsibilities ranged from graphic design to quick turn over web design and development for fast-paced clients.',   
-    'Some of the skills I use in this position include PHP, CSS, LESS, Twitter Bootstrap, jQuery, JavaScript.'
-    ]
+      'While at 4 Media I created over 50 bootstrap websites for various different clients. I also created landing pages which required a bit of JavaScript and marketing magic.',
+      'My responsibilities ranged from graphic design to quick turn over web design and development for fast-paced clients.',
+      'Some of the skills I use in this position include PHP, CSS, LESS, Twitter Bootstrap, jQuery, JavaScript.',
+    ],
   },
-]
+];

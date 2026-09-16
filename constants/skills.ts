@@ -13,8 +13,8 @@ export const skillsList: SkillColumn[] = [
       'Next.js',
       'Unit Testing',
       'SCSS',
-      'CSS-In-JS'
-    ]
+      'CSS-In-JS',
+    ],
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ export const skillsList: SkillColumn[] = [
       'Design Systems',
       'Git',
       'Storybook',
-      'Integration Testing'
-    ]
-  }
+      'Integration Testing',
+    ],
+  },
 ];

@@ -14,8 +14,8 @@ export default function ContactSection() {
             shoot me an email! Click the button below to launch your preferred
             email client!
           </p>
-          <a href="mailto:gxrobb@gmail.com">
-            <button>Email Me</button>
+          <a className="button" href="mailto:gxrobb@gmail.com">
+            Email Me
           </a>
         </div>
       </section>

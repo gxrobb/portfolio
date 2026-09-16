@@ -1,6 +1,10 @@
 import styles from '../styles/Home.module.scss';
 import EmployerDescription from './EmployerDescription';
-import { EmployerList } from './EmployerList';
+import {
+  EMPLOYER_PANEL_ID,
+  EmployerList,
+  getEmployerTabId,
+} from './EmployerList';
 import { LIST_OF_EMPLOYERS, type Employer } from '../constants/jobs';
 
 interface ExperienceSectionProps {
@@ -23,7 +27,7 @@ export default function ExperienceSection({
         </div>
         <div className={styles.experienceGrid}>
           <div className={styles.employer}>
-            <ul>
+            <ul role="tablist" aria-label="Employers">
               <EmployerList
                 employers={LIST_OF_EMPLOYERS}
                 activeEmployer={activeEmployer}
@@ -31,7 +35,13 @@ export default function ExperienceSection({
               />
             </ul>
           </div>
-          <div className={styles.employerDescription}>
+          <div
+            className={styles.employerDescription}
+            role="tabpanel"
+            id={EMPLOYER_PANEL_ID}
+            aria-labelledby={getEmployerTabId(activeEmployer)}
+            tabIndex={0}
+          >
             <EmployerDescription employer={activeEmployer} />
           </div>
         </div>
