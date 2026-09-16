@@ -1,6 +1,6 @@
 import profilePic from '../public/images/me.jpg';
 import Image from 'next/image';
-import { SkillsGrid } from '../components/SkillsGrid.js';
+import { SkillsGrid } from '../components/SkillsGrid';
 import styles from '../styles/Home.module.scss';
 
 export function AboutSection() {

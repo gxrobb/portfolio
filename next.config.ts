@@ -1,4 +1,6 @@
-module.exports = {
+import type { NextConfig } from 'next';
+
+const nextConfig: NextConfig = {
   reactStrictMode: true,
   // Bundle Font Awesome into the server build instead of loading it as an
   // external. On the Bun runtime, `next dev` otherwise 500s on a fresh `.next`
@@ -12,3 +14,5 @@ module.exports = {
     '@fortawesome/react-fontawesome',
   ],
 };
+
+export default nextConfig;

@@ -6,7 +6,8 @@
     "dev": "bun --bun next dev -p 8080",
     "build": "bun --bun next build",
     "start": "bun --bun next start",
-    "lint": "bun --bun eslint ."
+    "lint": "bun --bun eslint .",
+    "typecheck": "bun --bun next typegen && bun --bun tsc --noEmit"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
@@ -14,7 +15,6 @@
     "@fortawesome/free-brands-svg-icons": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
-    "axios": "^0.26.1",
     "next": "^16.3.5",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
@@ -24,6 +24,9 @@
     "styled-jsx": "^5.1.2"
   },
   "devDependencies": {
+    "@types/node": "^22.20.3",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
     "eslint": "^9.39.5",
     "eslint-config-next": "^16.3.5",
     "prettier": "^3.6.2",

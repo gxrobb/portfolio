@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 
 
-import Paragraph from '../components/ipsum/Paragraph.js'
-import ParagraphInput from '../components/ipsum/ParagraphInput.js';
+import Paragraph from '../components/ipsum/Paragraph'
+import ParagraphInput, { type IpsumSettings } from '../components/ipsum/ParagraphInput';
 
 export default function rpgIpsum() {
 
-    const [settings, setSettings] = useState({
+    const [settings, setSettings] = useState<IpsumSettings>({
         paragraphNumber: 0,
         sentenceLength: 0,
         showParagraph: false

@@ -1,7 +1,17 @@
 import React from 'react';
-import Image from 'next/image';
+import Image, { type ImageProps } from 'next/image';
 import styles from '../styles/ProjectCard.module.scss'
-export default function ProjectCard({ imgUrl, stackList, logoCopy, projectLink, shortDescription, id }) {
+
+interface ProjectCardProps {
+  imgUrl: ImageProps['src'];
+  stackList: string;
+  logoCopy: string;
+  projectLink: string;
+  shortDescription: string;
+  id: string;
+}
+
+export default function ProjectCard({ imgUrl, stackList, logoCopy, projectLink, shortDescription, id }: ProjectCardProps) {
   return (
     <div className={styles.cardWrapper}>
         <h3><a href={projectLink} rel="noreferrer noopener">{logoCopy}</a></h3>

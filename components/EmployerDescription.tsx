@@ -1,6 +1,11 @@
 import React from 'react';
+import type { Employer } from '../constants/jobs';
 
-export default function EmployerDescription({ employer }) {
+export default function EmployerDescription({
+  employer,
+}: {
+  employer: Employer;
+}) {
   
   return (
     <>

@@ -1,4 +1,4 @@
-import { skillsList } from '../constants/skills.js'
+import { skillsList } from '../constants/skills'
 import styles from '../styles/Home.module.scss'
 
  export function SkillsGrid() {
