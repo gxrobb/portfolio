@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import styles from '../../styles/RpgIpsum.module.scss';
+import styles from '@/styles/RpgIpsum.module.scss';
 
 type CopyStatus = 'idle' | 'copied' | 'failed';
 

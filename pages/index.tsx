@@ -1,13 +1,13 @@
 import { useState } from 'react';
-import styles from '../styles/Home.module.scss';
-import PageHead from '../components/PageHead';
-import ExperienceSection from '../components/ExperienceSection';
-import { LIST_OF_EMPLOYERS } from '../constants/jobs';
-import { AboutSection } from '../components/AboutSection';
-import SideIcons from '../components/SideIcons';
-import Navigation from '../components/Navigation';
-import ContactSection from '../components/ContactSection';
-import { SITE_DESCRIPTION, SITE_TITLE } from '../constants/site';
+import styles from '@/styles/Home.module.scss';
+import PageHead from '@/components/common/PageHead';
+import ExperienceSection from '@/components/home/ExperienceSection';
+import { LIST_OF_EMPLOYERS } from '@/constants/jobs';
+import { AboutSection } from '@/components/home/AboutSection';
+import SideIcons from '@/components/layout/SideIcons';
+import Navigation from '@/components/layout/Navigation';
+import ContactSection from '@/components/home/ContactSection';
+import { SITE_DESCRIPTION, SITE_TITLE } from '@/constants/site';
 
 export default function Home() {
   const [activeEmployer, setActiveEmployer] = useState(LIST_OF_EMPLOYERS[0]);

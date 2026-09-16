@@ -3,8 +3,8 @@ import {
   MAX_PARAGRAPHS,
   SENTENCE_LENGTHS,
   type IpsumSettings,
-} from '../../lib/rpgIpsum';
-import styles from '../../styles/RpgIpsum.module.scss';
+} from '@/lib/rpgIpsum';
+import styles from '@/styles/RpgIpsum.module.scss';
 
 interface IpsumFormProps {
   onGenerate: (settings: IpsumSettings) => void;

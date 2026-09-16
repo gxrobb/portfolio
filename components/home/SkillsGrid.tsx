@@ -1,5 +1,5 @@
-import { skillsList } from '../constants/skills';
-import styles from '../styles/Home.module.scss';
+import { skillsList } from '@/constants/skills';
+import styles from '@/styles/Home.module.scss';
 
 export function SkillsGrid() {
   return (

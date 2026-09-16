@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { SHARE_IMAGE, SITE_TITLE, SITE_URL } from '../constants/site';
+import { SHARE_IMAGE, SITE_TITLE, SITE_URL } from '@/constants/site';
 
 interface PageHeadProps {
   title: string;

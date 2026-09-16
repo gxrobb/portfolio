@@ -1,5 +1,5 @@
 import React from 'react';
-import type { Employer } from '../constants/jobs';
+import type { Employer } from '@/constants/jobs';
 
 export default function EmployerDescription({
   employer,

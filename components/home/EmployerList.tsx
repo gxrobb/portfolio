@@ -1,6 +1,6 @@
 import { useRef, type KeyboardEvent } from 'react';
-import styles from '../styles/Home.module.scss';
-import type { Employer } from '../constants/jobs';
+import styles from '@/styles/Home.module.scss';
+import type { Employer } from '@/constants/jobs';
 
 export const EMPLOYER_PANEL_ID = 'employer-panel';
 

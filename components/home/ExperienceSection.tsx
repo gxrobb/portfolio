@@ -1,11 +1,11 @@
-import styles from '../styles/Home.module.scss';
+import styles from '@/styles/Home.module.scss';
 import EmployerDescription from './EmployerDescription';
 import {
   EMPLOYER_PANEL_ID,
   EmployerList,
   getEmployerTabId,
 } from './EmployerList';
-import { LIST_OF_EMPLOYERS, type Employer } from '../constants/jobs';
+import { LIST_OF_EMPLOYERS, type Employer } from '@/constants/jobs';
 
 interface ExperienceSectionProps {
   activeEmployer: Employer;
