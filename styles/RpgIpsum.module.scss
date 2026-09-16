@@ -1,0 +1,106 @@
+@use './variables' as *;
+
+.page {
+  padding: 2rem 1rem 4rem;
+}
+
+.title {
+  margin: 3rem 0 0.5rem;
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.subtitle {
+  margin: 0 0 2.5rem;
+  color: $primaryColor;
+}
+
+.form {
+  display: grid;
+  gap: 1.5rem;
+  justify-items: start;
+}
+
+.field {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  > label,
+  > legend {
+    display: block;
+    margin-bottom: 0.5rem;
+    padding: 0;
+  }
+}
+
+.numberInput {
+  width: 5rem;
+  padding: 0.4rem 0.5rem;
+  border: 1px solid rgba($fontColor, 0.3);
+  border-radius: 5px;
+  background-color: rgba($fontColor, 0.05);
+  color: $fontColor;
+  font: inherit;
+
+  &:focus-visible {
+    outline: 2px solid $primaryColor;
+    outline-offset: 2px;
+  }
+}
+
+.hint {
+  margin-left: 0.5rem;
+  color: rgba($fontColor, 0.6);
+}
+
+.radioGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.radio {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+
+  input {
+    margin: 0;
+    accent-color: $primaryColor;
+  }
+}
+
+.output {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba($fontColor, 0.15);
+
+  p {
+    line-height: 1.7;
+  }
+}
+
+.outputActions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+
+  button {
+    margin-top: 0;
+  }
+}
+
+.copyStatus {
+  color: $primaryColor;
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 620px) {
+  .title {
+    margin-top: 2rem;
+    font-size: 1.75rem;
+  }
+}
