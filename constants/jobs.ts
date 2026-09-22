@@ -8,27 +8,38 @@ export interface Employer {
 
 export const LIST_OF_EMPLOYERS: Employer[] = [
   {
+    id: 'qumulex',
+    label: 'Qumulex',
+    title: 'Lead Front End Engineer @ Qumulex',
+    date: 'December 2025 - Present',
+    description: [
+      'Own the front end of a Vue.js, TypeScript and Vite application, from UI direction to ongoing maintenance.',
+      'Shape new features in Figma and build them out, both large and small.',
+      'Build interfaces backed by GraphQL and REST APIs for a product that pairs software with hardware.',
+      'Collaborate closely with a small team and use Claude for AI-assisted development.',
+    ],
+  },
+  {
     id: 'indico',
     label: 'Indico Data',
-    title: 'Senior Software Engineer @ IndicoData.AI',
-    date: 'July 2023 - August 2025',
+    title: 'Senior Frontend Engineer I @ Indico Data',
+    date: 'June 2023 - August 2025',
     description: [
-      'Developed and maintained React/TypeScript applications with a focus on scalability, performance, and GraphQL integration.',
-      'Created and maintained a comprehensive design system and component library, enabling consistency and faster development across teams.',
-      'Established best practices for unit and integration testing, as well as design system standards to streamline collaboration between designers and engineers.',
-      'Led the architecture and implementation of two new UI applications from the ground up.',
+      'Built a new React and TypeScript application from the ground up and contributed to the large-scale core product.',
+      'Pitched, architected and delivered a design system that standardized components, improved collaboration with designers and helped teams ship faster.',
+      "Guided the team's testing strategy, GraphQL API integrations and code quality standards to keep applications reliable as they scaled.",
     ],
   },
   {
     id: 'cofense',
     label: 'Cofense',
-    title: 'Software Engineer III (Senior UI Developer) @ Cofense',
+    title: 'Senior Frontend Developer @ Cofense',
     date: 'June 2022 - April 2023',
     description: [
-      'Collaborated with UX Designers and Back End developers to deploy, maintain and develop various SaaS applications under the Cofense umbrella. ',
-      'Contributed to the development of internal development tools such as a Design System, reviewed code and provided support and guidance to junior developers.',
-      'Worked with product owners and the development team to help prioritize and plan out the development of new features and bug fixes.',
-      'Some of the skills I used in this position included Vue.js, GitLab, and a Vue.js Component Library.',
+      'Delivered production features across several Vue.js and TypeScript SaaS applications.',
+      'Worked closely with the UI/UX director and back-end developers to keep features aligned with the design vision.',
+      "Contributed to the company's design system and Vue.js component library, reviewed code and mentored junior developers.",
+      'Helped product owners prioritize and plan features and bug fixes.',
     ],
   },
   {
@@ -37,9 +48,9 @@ export const LIST_OF_EMPLOYERS: Employer[] = [
     title: 'Front-End Developer @ Datica',
     date: 'August 2021 - May 2022',
     description: [
-      'Worked with Vue.js, along with plugins such as Vuetify Framework and VueFormulate. I helped flesh out existing UI and developed a new UI for the current SaaS product.',
-      'The majority of work was API and UI integration allowing users to manage their cloud compliance and their CI/CD pipelines',
-      'Some of the skills I used in this position included, Docker, Vue2, LESS, SASS, HTML, AWS, Git Lab and Adobe Suite',
+      "Built a new UI for Datica's SaaS platform and expanded the existing interface with Vue 2, Vuetify and VueFormulate.",
+      'Integrated the front end with back-end APIs so customers could manage their cloud compliance and CI/CD pipelines.',
+      'Styled the application with Sass and LESS, and worked with Docker, AWS and GitLab as part of the development workflow.',
     ],
   },
   {
@@ -48,20 +59,9 @@ export const LIST_OF_EMPLOYERS: Employer[] = [
     title: 'Front-End Developer @ Firewalls.com',
     date: 'August 2019 - August 2021',
     description: [
-      'I developed on Magento 2, Wordpress and Laravel 8 to maintain an online firewall reseller website. In addition to development, I also assisted the marketing team with the occasional web banner.',
-      'Responsibilities included managing 3 other developers, deploying code bi-weekly via Bitbucket Pipelines and maintaining the internal API.',
-      'Some of the skills I used in this position included PHP, Laravel, Magento 2 (Zend Framework), Vue3, LESS, SASS, HTML.',
-    ],
-  },
-  {
-    id: 'poolgarden',
-    label: 'Pool.Garden',
-    title: 'Front-End Developer @ Pool.Garden',
-    date: 'May 2021 - August 2021',
-    description: [
-      'I worked with a DevOps/Back-End developer in order to maintain and administer a Chia (XCH) mining pool.',
-      'Responsibilities included maintaining the front end codebase, adding new features and designing any features or elements as they are needed. This project will be going offline shortly.',
-      'Some of the skills I use in this position include NextJS, SASS, HTML.',
+      'Developed and maintained the Firewalls.com e-commerce site on Magento 2, WordPress and Laravel 8.',
+      'Managed a team of three developers, shipped releases every two weeks through Bitbucket Pipelines and maintained the internal API.',
+      'Built front-end features with Vue 3, Sass and LESS on a PHP back end, and supported the marketing team with web banners.',
     ],
   },
   {
@@ -70,9 +70,9 @@ export const LIST_OF_EMPLOYERS: Employer[] = [
     title: 'Front-End Developer @ BitLoft',
     date: 'August 2016 - August 2019',
     description: [
-      'While at BitLoft, I wore various hats. Working at a startup, I had the pleasure of working on both Front-End and Back-End projects. The majority of my time was spent designing and developing for internal projects as well as agency clients. I also had the chance to expand my skills in some marketing and technology related areas.',
-      'I worked on projects ranging from small wordpress sites to large Laravel SaaS apps. I also assisted the marketing director with planning in-person events at conventions, assisted the esports director on various events and projects ranging from configuring television monitors to display ads and create video trailers for upcoming competitions.',
-      'Some of the web specific skills I used during my time at BitLoft include Laravel 5, PHP, CSS, SASS, LESS, JavaScript, jQuery, MySQL, Google Cloud Platform, Design and Print Design.',
+      'Designed and developed web projects for agency clients and internal products, working across the front end and back end.',
+      'Built everything from small WordPress sites to large Laravel SaaS applications using PHP, MySQL, JavaScript, jQuery, Sass and LESS on Google Cloud Platform.',
+      'Supported the marketing and esports directors with print design, event planning, digital signage and promotional videos.',
     ],
   },
   {
@@ -81,9 +81,43 @@ export const LIST_OF_EMPLOYERS: Employer[] = [
     title: 'Web Designer @ 4 Media',
     date: 'February 2015 - May 2016',
     description: [
-      'While at 4 Media I created over 50 bootstrap websites for various different clients. I also created landing pages which required a bit of JavaScript and marketing magic.',
-      'My responsibilities ranged from graphic design to quick turn over web design and development for fast-paced clients.',
-      'Some of the skills I use in this position include PHP, CSS, LESS, Twitter Bootstrap, jQuery, JavaScript.',
+      'Designed and built more than 50 Bootstrap websites for a variety of clients.',
+      'Created marketing landing pages with custom JavaScript and jQuery.',
+      'Handled graphic design and quick-turnaround web development with PHP, CSS and LESS for fast-paced clients.',
+    ],
+  },
+];
+
+export const LIST_OF_CONTRACTS: Employer[] = [
+  {
+    id: 'startupwerx',
+    label: 'StartupWerx',
+    title: 'Full-stack Developer @ StartupWerx',
+    date: 'October 2025 - March 2026',
+    description: [
+      'Built Next.js and TypeScript interfaces on a short-term full-stack contract, focusing on front-end architecture and performance.',
+      'Developed back-end APIs and data handling in Python and MySQL to support the front end.',
+    ],
+  },
+  {
+    id: 'verizon',
+    label: 'Verizon',
+    title: 'Senior Frontend Developer @ Verizon',
+    date: 'November 2025 - December 2025',
+    description: [
+      "Built and delivered React and TypeScript components for an expansion pack to Verizon's design system.",
+      'Partnered with UX designers so each component matched the design spec.',
+      'Mentored fellow senior developers on design systems.',
+    ],
+  },
+  {
+    id: 'poolgarden',
+    label: 'Pool.Garden',
+    title: 'Front-End Developer @ Pool.Garden',
+    date: 'May 2021 - August 2021',
+    description: [
+      'Partnered with a DevOps and back-end developer on an independent project to run a Chia (XCH) mining pool.',
+      'Maintained the Next.js and Sass front end, designing and building new features as needed.',
     ],
   },
 ];
