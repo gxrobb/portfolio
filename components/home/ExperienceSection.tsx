@@ -1,36 +1,43 @@
+import { useState } from 'react';
 import Section from '@/components/common/Section';
 import EmployerDescription from './EmployerDescription';
-import {
-  EMPLOYER_PANEL_ID,
-  EmployerList,
-  getEmployerTabId,
-} from './EmployerList';
-import { LIST_OF_EMPLOYERS, type Employer } from '@/constants/jobs';
+import { EmployerList, getEmployerTabId } from './EmployerList';
+import type { Employer } from '@/constants/jobs';
 import styles from './ExperienceSection.module.scss';
 
 interface ExperienceSectionProps {
-  activeEmployer: Employer;
-  setActiveEmployer: (employer: Employer) => void;
+  id: string;
+  title: string;
+  /** Accessible name for the tab list. */
+  label: string;
+  employers: Employer[];
 }
 
 export default function ExperienceSection({
-  activeEmployer,
-  setActiveEmployer,
+  id,
+  title,
+  label,
+  employers,
 }: ExperienceSectionProps) {
+  const [activeEmployer, setActiveEmployer] = useState(employers[0]);
+  const panelId = `${id}-panel`;
+
   return (
-    <Section id="experience" title="Places I've Worked">
+    <Section id={id} title={title}>
       <div className={styles.grid}>
         <div>
           <EmployerList
-            employers={LIST_OF_EMPLOYERS}
+            label={label}
+            panelId={panelId}
+            employers={employers}
             activeEmployer={activeEmployer}
             onEmployerSelect={setActiveEmployer}
           />
         </div>
         <div
           role="tabpanel"
-          id={EMPLOYER_PANEL_ID}
-          aria-labelledby={getEmployerTabId(activeEmployer)}
+          id={panelId}
+          aria-labelledby={getEmployerTabId(panelId, activeEmployer)}
           tabIndex={0}
         >
           <EmployerDescription employer={activeEmployer} />

@@ -12,10 +12,8 @@ export default function Hero() {
         </h3>
         <p>
           I am a{' '}
-          <span className={styles.highlight}>
-            Senior Front-End Web Developer
-          </span>{' '}
-          who has a passion for graphic and interaction design.
+          <span className={styles.highlight}>Lead Front End Engineer</span> who
+          has a passion for graphic and interaction design.
         </p>
         <a className="button" href="mailto:gxrobb@gmail.com">
           Get In Touch

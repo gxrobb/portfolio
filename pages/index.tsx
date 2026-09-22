@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import PageHead from '@/components/common/PageHead';
 import { AboutSection } from '@/components/home/AboutSection';
 import ContactSection from '@/components/home/ContactSection';
@@ -7,13 +6,11 @@ import Hero from '@/components/home/Hero';
 import Footer from '@/components/layout/Footer';
 import Navigation from '@/components/layout/Navigation';
 import SideIcons from '@/components/layout/SideIcons';
-import { LIST_OF_EMPLOYERS } from '@/constants/jobs';
+import { LIST_OF_CONTRACTS, LIST_OF_EMPLOYERS } from '@/constants/jobs';
 import { SITE_DESCRIPTION, SITE_TITLE } from '@/constants/site';
 import styles from '@/styles/pages/Home.module.scss';
 
 export default function Home() {
-  const [activeEmployer, setActiveEmployer] = useState(LIST_OF_EMPLOYERS[0]);
-
   return (
     <>
       <PageHead title={SITE_TITLE} description={SITE_DESCRIPTION} path="/" />
@@ -24,8 +21,16 @@ export default function Home() {
         <Hero />
         <AboutSection />
         <ExperienceSection
-          activeEmployer={activeEmployer}
-          setActiveEmployer={setActiveEmployer}
+          id="experience"
+          title="Places I've Worked"
+          label="Employers"
+          employers={LIST_OF_EMPLOYERS}
+        />
+        <ExperienceSection
+          id="contract-work"
+          title="Contract Work"
+          label="Contracts"
+          employers={LIST_OF_CONTRACTS}
         />
         <ContactSection />
       </main>

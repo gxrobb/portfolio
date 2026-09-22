@@ -2,19 +2,22 @@ import { useRef, type KeyboardEvent } from 'react';
 import type { Employer } from '@/constants/jobs';
 import styles from './EmployerList.module.scss';
 
-export const EMPLOYER_PANEL_ID = 'employer-panel';
-
-export function getEmployerTabId(employer: Employer) {
-  return `employer-tab-${employer.id}`;
+// Scoped to the panel so two tab lists on one page never share tab ids.
+export function getEmployerTabId(panelId: string, employer: Employer) {
+  return `${panelId}-tab-${employer.id}`;
 }
 
 interface EmployerListProps {
+  label: string;
+  panelId: string;
   employers: Employer[];
   activeEmployer: Employer;
   onEmployerSelect: (employer: Employer) => void;
 }
 
 export function EmployerList({
+  label,
+  panelId,
   employers,
   activeEmployer,
   onEmployerSelect,
@@ -54,7 +57,7 @@ export function EmployerList({
   }
 
   return (
-    <ul role="tablist" aria-label="Employers" className={styles.list}>
+    <ul role="tablist" aria-label={label} className={styles.list}>
       {employers.map((employer, index) => {
         const isActive = activeEmployer.id === employer.id;
         return (
@@ -69,9 +72,9 @@ export function EmployerList({
               }}
               type="button"
               role="tab"
-              id={getEmployerTabId(employer)}
+              id={getEmployerTabId(panelId, employer)}
               aria-selected={isActive}
-              aria-controls={EMPLOYER_PANEL_ID}
+              aria-controls={panelId}
               tabIndex={isActive ? 0 : -1}
               className={styles.tab}
               onClick={() => onEmployerSelect(employer)}
