@@ -38,7 +38,7 @@ components/
 constants/    Site title/URL, job history, skills list
 lib/          RPG ipsum text generator
 pages/        Routes: index.tsx (/), rpgIpsum.tsx (/rpgIpsum), plus _app and _document
-public/       Images, resume.pdf, robots.txt, sitemap.xml
+public/       Images, robots.txt, sitemap.xml
 styles/       Global styles, Sass variables and mixins, page-level modules
 ```
 
@@ -56,7 +56,6 @@ Imports use the `@/` alias for the repo root (`@/components/home/Hero`, `@/const
 
 - **Jobs and contract work:** `constants/jobs.ts`. **Skills:** `constants/skills.ts`.
 - **Site title, description and URL:** `constants/site.ts`. Each page sets its own metadata through `PageHead`.
-- **Resume:** replace `public/resume.pdf`.
 - **New pages:** add them to `public/sitemap.xml`.
 
 ## Notes

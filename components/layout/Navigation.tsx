@@ -11,9 +11,6 @@ export default function Navigation() {
           <a href="#experience">Experience</a>
         </li>
         <li>
-          <a href="/resume.pdf">Resume</a>
-        </li>
-        <li>
           <a href="#contact">Contact</a>
         </li>
         <li>
